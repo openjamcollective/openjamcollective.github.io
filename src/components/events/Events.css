@@ -1,0 +1,86 @@
+.event-info {
+    font-size: large;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    text-align: left;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .event-info{
+      grid-template-columns: 1fr;
+    }
+  }
+
+.event-image{
+    max-width: 300px;
+}
+
+.logo-image{
+    max-width: 30px;
+}
+
+@media (min-width: 768px) {
+    .event-vid{
+        width: 40rem;
+        height: 20rem;
+      }
+  }
+
+.event-photo{
+    width: 30%;
+    height: 30%;
+    /* transform: scale(1.2); */
+}
+.logos{
+    padding-bottom: 1rem;
+    /* display: grid;
+    grid-template-columns: 40% 40%; */
+}
+
+.App-header h4{
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.date-arr{
+    /* display: grid; */
+}
+
+.fb-logo{
+    min-height: 20px;
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+
+.ig-logo{
+    min-height: 30px;
+    /* padding-left: 5%;
+    padding-bottom: 2%; */
+}
+
+.info-div{
+    padding-left: 5%;
+    /* max-width: 40%; */
+    /* max-width: 30%; */
+}
+.info-panel p{
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.carousel-container{
+    background: #f1f1f1;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.carousel-item{
+    height: 20rem;
+    min-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}

@@ -1,0 +1,38 @@
+import { MediaType } from "./util"
+
+export interface PersonProps {
+    name: string
+    about: string
+    social?: string
+    fb?: string
+    media?: string
+    photo_style?: string
+}
+
+export interface InfoProps {
+    title: string
+    info: string[]
+}
+
+export interface EventProps {
+    name: string
+    about: string
+    date: Date[]
+    location: string
+    media?: string
+    media2?: string
+    link?: string
+    video?: string
+    instagram?: string
+    facebook?: string
+    info?: string
+    role?: string
+    event: MediaType
+    affiliates?: AffiliateProps[]
+}
+
+export interface AffiliateProps {
+    name: string
+    role: string
+}
+

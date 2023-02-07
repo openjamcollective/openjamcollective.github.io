@@ -1,0 +1,88 @@
+.info {
+    font-size: large;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-column: 1/2;
+}
+
+.info-people {
+    font-size: large;
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.info-no-bullets{
+    list-style-type: none;
+    font-size: large;
+    text-align: left;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.info-title{
+    text-align: left;
+    padding-left: 8%;
+    /* font-family: 'Lucida Console', monospace;  */
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.font-stylin{
+}
+
+.logo-fb{
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.info-page{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.person{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
+.grid-child-media{
+    text-align: center;
+    grid-column: 2/3;
+}
+
+@media (max-width: 768px) {
+  .person{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .grid-child-media {
+    grid-column: 1/2;
+    grid-row: 2;
+    text-align: center;
+    }
+    .info-people {
+        padding: 0;
+    }
+}
+
+
+
+.grid-child-media img{
+    width: 70%;
+    height: 80%;
+    object-fit: cover;
+}
+.horizontal-rect{
+    height: 100% !important;
+}
+
+.person-image{
+    /* max-width: 300px; */
+    /* clip: rect(10px, 50px, 50px, 10px); */
+}
+
+.logo-image{
+    max-width: 40px;
+}

@@ -14,7 +14,10 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  /* background-color:midnightblue;
+  background-color:HEX #001456, RGB(0,20,86), CMYK(100,77,0,66); */
+  background-color: #001456;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
