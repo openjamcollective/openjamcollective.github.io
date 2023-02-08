@@ -1,6 +1,6 @@
 import * as Module from '../interfaces';
 import * as UtilConst from '../util';
-import kd from '../images/Keith.jpg';
+import kd from '../images/Keith2.jpg';
 import DIANA_PHOTO from '../images/diana.jpg';
 export const diana: Module.PersonProps = {
     name: 'Diana Da Silva',
