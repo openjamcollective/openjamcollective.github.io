@@ -18,7 +18,7 @@ export const luis: Module.PersonProps = {
 
 export const keith: Module.PersonProps = {
     name: 'Keith Dang',
-    about: 'Keith Dang aka "Slow Keith", is a street dancer and a software developer. He has been active in the street dance community for 10 years. Also, he created this website, hello world.',
+    about: 'Keith Dang aka "Slow Keith", is a street dancer, software developer, and second generation Vietnamese immigrant. He has been active in the street dance community for 10 years. Also, he created this website, hello world.',
     fb: 'keith.dang',
     social: 'slow.keith/',
     media: kd,
