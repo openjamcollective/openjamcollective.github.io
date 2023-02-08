@@ -62,6 +62,9 @@
     grid-row: 2;
     text-align: center;
     }
+    .grid-child-media img{
+        width: 75%;
+        }
     .info-people {
         padding: 0;
     }
