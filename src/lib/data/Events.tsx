@@ -1,6 +1,8 @@
 import * as Module from '../interfaces';
 import botbp from '../images/BOTBPoster.png';
 import cotbp from '../images/COTB.png';
+import potbp from '../images/potb.jpg';
+import potbp2 from '../images/potb2.png';
 import topop from '../images/topopping.jpeg';
 import daven from '../images/dp.png';
 import daven2 from '../images/dpnchc.jpg';
@@ -17,6 +19,7 @@ const curtis: Module.AffiliateProps = {
     role: 'Creative Director'
 }
 const bentway = "The Bentway Studio";
+const coin8 = "Coin 8 Studio";
 
 export const botb: Module.EventProps = {
     name: 'Boogie On The Block',
@@ -42,6 +45,20 @@ export const cotb: Module.EventProps = {
     instagram: 'p/CjisSNHJ3Mz/',
     facebook: '431711305467858',
     video: 'd2mMJJVw_mk',
+    link: 'cotb',
+    event: MediaType.Normal
+}
+
+export const potb: Module.EventProps = {
+    name: 'Party On The Block',
+    about: 'Launch party in partnership with various dance collectives',
+    role: 'Organizer',
+    date: [new Date(2023, 1, 10)],
+    location: coin8,
+    media: potbp,
+    instagram: 'p/Cn4gbq8Lzk6/',
+    facebook: '1116902578989034',
+    media2: potbp2,
     link: 'cotb',
     event: MediaType.Normal
 }
@@ -74,6 +91,6 @@ export const dperth: Module.EventProps = {
 
 
 
-export const event_unsorted: Module.EventProps[] = [cotb, dperth, topopping, botb];
+export const event_unsorted: Module.EventProps[] = [potb, cotb, dperth, topopping, botb];
 
 export const eventlist: Module.EventProps[] = Util.sortEventsByDate(event_unsorted);
