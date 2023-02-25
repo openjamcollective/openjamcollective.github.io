@@ -27,7 +27,8 @@ const infoDiv = (props: EventProps) => {
         <p>{props.about}</p>
         {props.role && <p>{props.role}</p>}
         <p>{props.location}</p>
-        {dateInfo(props)}
+        {/* {dateInfo(props)} */}
+        {Util.formatDatesWithEvents(props.date, props.event)}
         <div className="logos">
             {props.instagram && <a href={Util.instagram + props.instagram}>
                 <img className="ig-logo" src={iglogo}/>
@@ -40,19 +41,26 @@ const infoDiv = (props: EventProps) => {
 }
 
 const dateInfo = (props: EventProps) => {
-    return (
-        <div>
-          {props.event == Util.MediaType.Series ? (
-            <p>
-                {props.date
-                    .map(day => Util.formatDate(day.toLocaleDateString()))
-                    .join(', ')}
-            </p>
-          ) : (
-            <p>{Util.formatDate(props.date[0].toLocaleDateString())}</p>
-          )}
-        </div>
-      );
+  let dateContent = null;
+  switch (props.event) {
+      case Util.MediaType.Series:
+          dateContent = props.date
+              .map(day => Util.formatDate(day.toLocaleDateString()))
+              .join(', ');
+          break;
+      case Util.MediaType.Festival:
+          dateContent = Util.formatDate(props.date[0].toLocaleDateString()) +" - "+ Util.formatDate(props.date[props.date.length-1].toLocaleDateString());
+          break;
+      default:
+          dateContent = Util.formatDate(props.date[0].toLocaleDateString());
+          break;
+  }
+
+  return (
+      <div>
+          <p>{dateContent}</p>
+      </div>
+  );
 }
 
 const mediaDiv = (props: EventProps) => {

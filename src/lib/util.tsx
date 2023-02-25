@@ -1,6 +1,7 @@
 
 import * as Module from './interfaces';
 
+
 export function formatDate(dateString: string): string {
     const date = new Date(dateString);
   
@@ -14,6 +15,30 @@ export function formatDate(dateString: string): string {
   
     return formatter.format(date);
 }
+
+export function formatDatesWithEvents (dates: Date[], eventType: MediaType, isPanel: boolean=true): string{
+  let dateContent = null;
+  switch (eventType) {
+      case MediaType.Series:
+          if(isPanel){
+            dateContent = dates
+            .map(day => formatDate(day.toLocaleDateString()))
+            .join(', ');
+          }else{
+            dateContent = formatDate(getLatestDate(dates).toLocaleDateString());
+          }
+          break;
+      case MediaType.Festival:
+          dateContent = formatDate(dates[0].toLocaleDateString()) +" - "+ formatDate(dates[dates.length-1].toLocaleDateString());
+          break;
+      default:
+          dateContent = formatDate(dates[0].toLocaleDateString());
+          break;
+  }
+
+  return dateContent
+}
+
 export const sortEventsByDate = (arr: Module.EventProps[]) => {
     return arr.sort((a, b) => {
       // Sort the dates in descending order (latest first)
@@ -39,7 +64,9 @@ export const instagram = "https://www.instagram.com/";
 export enum MediaType {
     Normal,
     Series,
-    Program
+    Program,
+    Festival
 }
+//Festival is anything that has 2 events 
   
   

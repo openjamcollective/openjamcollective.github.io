@@ -51,7 +51,8 @@ const infoDiv = (props: EventProps) => {
         </div>            
         <p>{props.about}</p>
         <p>{props.location}</p>
-        <p>{Util.formatDate(Util.getLatestDate(props.date).toLocaleDateString())}</p>
+        {/* <p>{Util.formatDate(Util.getLatestDate(props.date).toLocaleDateString())}</p> */}
+        <p>{Util.formatDatesWithEvents(props.date, props.event, false)}</p>
         <Link to={"/events/"+props.link}>
             <button>More</button>
         </Link>

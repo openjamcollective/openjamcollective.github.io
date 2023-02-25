@@ -6,6 +6,7 @@ import potbp2 from '../images/potb2.png';
 import topop from '../images/topopping.jpeg';
 import daven from '../images/dp.png';
 import daven2 from '../images/dpnchc.jpg';
+import fffp from '../images/Funk_4_Fun.jpg';
 import * as Util from '../util';
 import { MediaType } from '../util';
 
@@ -20,6 +21,7 @@ const curtis: Module.AffiliateProps = {
 }
 const bentway = "The Bentway Studio";
 const coin8 = "Coin 8 Studio";
+const dvpch = "Davenport-Perth Neighbourhood and Community Health Centre";
 
 export const botb: Module.EventProps = {
     name: 'Boogie On The Block',
@@ -67,7 +69,7 @@ export const topopping: Module.EventProps = {
     name: 'Toronto Popping Battle Series',
     about: '1v1 Popping Battles',
     role: 'Sponsor',
-    date: [new Date(2022, 10, 25), new Date(2023, 0, 20)],
+    date: [new Date(2022, 10, 25), new Date(2023, 0, 20), new Date(2023, 2, 17)],
     location: 'Studio North Toronto',
     media: topop,
     instagram: 'p/CkwhtZ-toKU/',
@@ -80,7 +82,7 @@ export const dperth: Module.EventProps = {
     name: 'Street Dance Drop-In Sessions',
     about: 'Weekly Program',
     date: [new Date(2023, 0, 4), new Date(2022, 10, 2)],
-    location: 'Davenport-Perth Neighbourhood and Community Health Centre',
+    location: dvpch,
     media: daven,
     media2: daven2,
     instagram: 'p/CmZx7VBv3G0/',
@@ -88,9 +90,20 @@ export const dperth: Module.EventProps = {
     event: MediaType.Program
 }
 
+export const fff: Module.EventProps = {
+    name: 'Funk 4 Fun',
+    about: 'Workshops & Battle',
+    date: [new Date(2023, 2, 1), new Date(2023, 2, 22)],
+    location: dvpch,
+    media: fffp,
+    instagram: 'p/Co3TsXQt6wn/',
+    facebook: '1534855293677206',
+    event: MediaType.Festival
+}
 
 
 
-export const event_unsorted: Module.EventProps[] = [potb, cotb, dperth, topopping, botb];
+
+export const event_unsorted: Module.EventProps[] = [potb, cotb, dperth, topopping, botb, fff];
 
 export const eventlist: Module.EventProps[] = Util.sortEventsByDate(event_unsorted);
