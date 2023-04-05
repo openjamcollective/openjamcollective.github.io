@@ -68,7 +68,7 @@ export const potb: Module.EventProps = {
 export const topopping: Module.EventProps = {
     name: 'Toronto Popping Battle Series',
     about: '1v1 Popping Battles',
-    role: 'Sponsor',
+    role: 'Sponsor & Collaborator',
     date: [new Date(2022, 10, 25), new Date(2023, 0, 20), new Date(2023, 2, 17)],
     location: 'Studio North Toronto',
     media: topop,
@@ -81,7 +81,7 @@ export const topopping: Module.EventProps = {
 export const dperth: Module.EventProps = {
     name: 'Street Dance Drop-In Sessions',
     about: 'Weekly Program',
-    date: [new Date(2023, 0, 4), new Date(2022, 10, 2)],
+    date: [new Date(2022, 10, 2), new Date(2023, 3, 26)],
     location: dvpch,
     media: daven,
     media2: daven2,

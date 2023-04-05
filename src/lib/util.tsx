@@ -31,6 +31,9 @@ export function formatDatesWithEvents (dates: Date[], eventType: MediaType, isPa
       case MediaType.Festival:
           dateContent = formatDate(dates[0].toLocaleDateString()) +" - "+ formatDate(dates[dates.length-1].toLocaleDateString());
           break;
+      case MediaType.Program:
+          dateContent = formatDate(dates[0].toLocaleDateString()) +" - "+ formatDate(dates[dates.length-1].toLocaleDateString());
+          break;
       default:
           dateContent = formatDate(dates[0].toLocaleDateString());
           break;

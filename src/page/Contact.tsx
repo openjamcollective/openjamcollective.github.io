@@ -22,7 +22,7 @@ const contactInfo = () => {
             <p>openjamcollective@gmail.com</p>
         </div>
         <div className='logo-info'>
-            <a href='https://www.instagram.com/oatmilkandjam/'>
+            <a href='https://www.instagram.com/openjamcollective/'>
                 <img className="ig-logo" src={iglogo}/>
             </a>
             <p>@openjamcollective</p>

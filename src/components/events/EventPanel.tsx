@@ -27,7 +27,6 @@ const infoDiv = (props: EventProps) => {
         <p>{props.about}</p>
         {props.role && <p>{props.role}</p>}
         <p>{props.location}</p>
-        {/* {dateInfo(props)} */}
         {Util.formatDatesWithEvents(props.date, props.event)}
         <div className="logos">
             {props.instagram && <a href={Util.instagram + props.instagram}>
