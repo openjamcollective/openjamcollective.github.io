@@ -1,11 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.9f8bb444.css",
-    "main.js": "/static/js/main.8a83d150.js",
+    "main.js": "/static/js/main.77e93800.js",
     "static/js/787.a03ba732.chunk.js": "/static/js/787.a03ba732.chunk.js",
+    "static/media/BickfordBoogie2.jpg": "/static/media/BickfordBoogie2.bf4ed4d2949b0647005d.jpg",
     "static/media/Keith2.jpg": "/static/media/Keith2.92e65c01a7bab4d90517.jpg",
     "static/media/AJ.jpg": "/static/media/AJ.18fd03b44674651e53a8.jpg",
     "static/media/Diana.jpg": "/static/media/Diana.6ec7e9bc10357b9127de.jpg",
+    "static/media/BickfordBoogie.png": "/static/media/BickfordBoogie.d24269cba57362d1d0d2.png",
     "static/media/potb.jpg": "/static/media/potb.a391af2963ae4fe9c4ad.jpg",
     "static/media/COTB.png": "/static/media/COTB.274fae087017261f70f1.png",
     "static/media/BOTB_Clean.jpg": "/static/media/BOTB_Clean.7d8692ba5322b5b360e4.jpg",
@@ -20,11 +22,11 @@
     "static/media/OJC_Full.png": "/static/media/OJC_Full.52e54a5e32273496c119.png",
     "index.html": "/index.html",
     "main.9f8bb444.css.map": "/static/css/main.9f8bb444.css.map",
-    "main.8a83d150.js.map": "/static/js/main.8a83d150.js.map",
+    "main.77e93800.js.map": "/static/js/main.77e93800.js.map",
     "787.a03ba732.chunk.js.map": "/static/js/787.a03ba732.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9f8bb444.css",
-    "static/js/main.8a83d150.js"
+    "static/js/main.77e93800.js"
   ]
 }
