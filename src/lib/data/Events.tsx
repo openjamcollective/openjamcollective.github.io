@@ -7,6 +7,8 @@ import topop from '../images/topopping.jpeg';
 import daven from '../images/dp.png';
 import daven2 from '../images/dpnchc.jpg';
 import fffp from '../images/Funk_4_Fun.jpg';
+import bboogie from '../images/BickfordBoogie.png';
+import bboogie2 from '../images/BickfordBoogie2.jpg';
 import * as Util from '../util';
 import { MediaType } from '../util';
 
@@ -22,6 +24,7 @@ const curtis: Module.AffiliateProps = {
 const bentway = "The Bentway Studio";
 const coin8 = "Coin 8 Studio";
 const dvpch = "Davenport-Perth Neighbourhood and Community Health Centre";
+const bickford = "Bickford Park";
 
 export const botb: Module.EventProps = {
     name: 'Boogie On The Block',
@@ -101,9 +104,19 @@ export const fff: Module.EventProps = {
     event: MediaType.Festival
 }
 
+export const bickfordboogie: Module.EventProps = {
+    name: 'Bickford Boogie',
+    about: '1v1 Popping Battle',
+    date: [new Date(2023, 7, 21)],
+    location: bickford,
+    media: bboogie,
+    media2: bboogie2,
+    instagram: 'p/CuXHt1BgBTF/',
+    facebook: '966716321244992',
+    event: MediaType.Normal
+}
 
 
-
-export const event_unsorted: Module.EventProps[] = [potb, cotb, dperth, topopping, botb, fff];
+export const event_unsorted: Module.EventProps[] = [potb, cotb, dperth, topopping, botb, fff, bickfordboogie];
 
 export const eventlist: Module.EventProps[] = Util.sortEventsByDate(event_unsorted);
