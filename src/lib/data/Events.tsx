@@ -104,7 +104,7 @@ export const fff: Module.EventProps = {
 export const bickfordboogie: Module.EventProps = {
     name: 'Bickford Boogie',
     about: '1v1 Popping Battle',
-    date: [new Date(2023, 7, 21)],
+    date: [new Date(2023, 6, 21)],
     location: bickford,
     media: bboogie,
     media2: bboogie2,
