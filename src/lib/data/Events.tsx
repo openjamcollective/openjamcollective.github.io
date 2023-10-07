@@ -9,22 +9,19 @@ import daven2 from '../images/dpnchc.jpg';
 import fffp from '../images/Funk_4_Fun.jpg';
 import bboogie from '../images/BickfordBoogie.png';
 import bboogie2 from '../images/BickfordBoogie2.jpg';
+import dancetogether from '../images/Dance_Together.png';
+import unityprogram from '../images/Unity_Program.jpg';
+import unitygroup from '../images/Unity_Group.jpg';
 import * as Util from '../util';
 import { MediaType } from '../util';
 
-const vickie: Module.AffiliateProps = {
-    name: 'Vickie',
-    role: 'Creative Director'
-}
 
-const curtis: Module.AffiliateProps = {
-    name: 'Curtis',
-    role: 'Creative Director'
-}
 const bentway = "The Bentway Studio";
 const coin8 = "Coin 8 Studio";
 const dvpch = "Davenport-Perth Neighbourhood and Community Health Centre";
 const bickford = "Bickford Park";
+const UNITY_STUDIO = "Unity Charity";
+const ASSEMBLY_PARK = "Assembly Park";
 
 export const botb: Module.EventProps = {
     name: 'Boogie On The Block',
@@ -116,7 +113,35 @@ export const bickfordboogie: Module.EventProps = {
     event: MediaType.Normal
 }
 
+export const dancetogetherfest: Module.EventProps = {
+    name: 'Dance Together Festivaal',
+    about: 'Popping Session',
+    date: [new Date(2023, 8 ,30)],
+    location: ASSEMBLY_PARK,
+    media: dancetogether,
+    instagram: 'p/CxoOnWxpoIR/',
+    event: MediaType.Normal
+}
 
-export const event_unsorted: Module.EventProps[] = [potb, cotb, dperth, topopping, botb, fff, bickfordboogie];
+export const unityfall: Module.EventProps = {
+    name: 'Unity Charity Workshops',
+    about: 'Ongoing Weekly Popping Program',
+    date: [new Date(2023, 9, 4), new Date(2023, 10, 22)],
+    location: UNITY_STUDIO,
+    media: unityprogram,
+    media2: unitygroup,
+    instagram: 'p/CxoIJkXPheY/',
+    event: MediaType.Program
+}
+
+export const event_unsorted: Module.EventProps[] = [potb, 
+    cotb, 
+    dperth, 
+    topopping, 
+    botb, 
+    fff, 
+    bickfordboogie, 
+    dancetogetherfest, 
+    unityfall];
 
 export const eventlist: Module.EventProps[] = Util.sortEventsByDate(event_unsorted);
