@@ -28,7 +28,7 @@ function App() {
           <Route path="/events" element={<Events/>} />
           <Route path="/contact" element={<Contact/>} />
           {eventlist.map(event=>
-            <Route path={"/events/"+event.link} element={<EventPanel obj={event}/>} />
+            <Route path={"/events/"+event.name.replace(/\s+/g, '').toLowerCase()} element={<EventPanel obj={event}/>} />
           )}
           <Route path="/" element={<Home/>}/>
     </Routes>

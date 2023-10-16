@@ -53,7 +53,7 @@ const infoDiv = (props: EventProps) => {
         <p>{props.location}</p>
         {/* <p>{Util.formatDate(Util.getLatestDate(props.date).toLocaleDateString())}</p> */}
         <p>{Util.formatDatesWithEvents(props.date, props.event, false)}</p>
-        <Link to={"/events/"+props.link}>
+        <Link to={"/events/"+props.name.replace(/\s+/g, '').toLowerCase()}>
             <button>More</button>
         </Link>
     </div>)
