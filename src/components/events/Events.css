@@ -11,7 +11,11 @@
       grid-template-columns: 1fr;
     }
   }
-
+  @media (min-width: 768px) {
+    .media-div{
+        min-width: 600px 
+    }
+  }
 .event-image{
     max-width: 300px;
 }
@@ -54,15 +58,12 @@
 
 .ig-logo{
     min-height: 30px;
-    /* padding-left: 5%;
-    padding-bottom: 2%; */
 }
 
 .info-div{
     padding-left: 5%;
-    /* max-width: 40%; */
-    /* max-width: 30%; */
 }
+
 .info-panel p{
     margin-top: 7%;
     margin-bottom: 7%;

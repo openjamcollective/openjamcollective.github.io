@@ -60,7 +60,7 @@ const infoDiv = (props: EventProps) => {
 }
 
 const mediaDiv = (props: EventProps) => {
-    return (<div>
+    return (<div className="media-div">
               {props.media &&
                     <div>
                         <img className="event-image" src={props.media}/>

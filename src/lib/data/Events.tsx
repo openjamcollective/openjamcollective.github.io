@@ -10,6 +10,7 @@ import fffp from '../images/Funk_4_Fun.jpg';
 import bboogie from '../images/BickfordBoogie.png';
 import bboogie2 from '../images/BickfordBoogie2.jpg';
 import dancetogether from '../images/Dance_Together.png';
+import unitydpt from '../images/Unity_Davenport.jpg';
 import unityprogram from '../images/Unity_Program.jpg';
 import unitygroup from '../images/Unity_Group.jpg';
 import * as Util from '../util';
@@ -125,7 +126,7 @@ export const dancetogetherfest: Module.EventProps = {
 
 export const unityfall: Module.EventProps = {
     name: 'Unity Charity Workshops',
-    about: 'Ongoing Weekly Popping Program',
+    about: 'Weekly Popping Program',
     date: [new Date(2023, 9, 4), new Date(2023, 10, 22)],
     location: UNITY_STUDIO,
     media: unityprogram,
@@ -134,7 +135,18 @@ export const unityfall: Module.EventProps = {
     event: MediaType.Program
 }
 
-export const event_unsorted: Module.EventProps[] = [potb, 
+export const unitydavenport: Module.EventProps = {
+    name: 'Popping & Street Dance Sessions',
+    about: 'Weekly Popping Program with Unity Charity and Davenport',
+    date: [new Date(2023, 10, 29), new Date(2024, 2, 27)],
+    location: dvpch,
+    media: unitydpt,
+    instagram: 'p/C0FfzVmvqf1/',
+    event: MediaType.Program
+}
+
+export const event_unsorted: Module.EventProps[] = [
+    potb, 
     cotb, 
     dperth, 
     topopping, 
@@ -142,6 +154,7 @@ export const event_unsorted: Module.EventProps[] = [potb,
     fff, 
     bickfordboogie, 
     dancetogetherfest, 
-    unityfall];
+    unityfall,
+    unitydavenport];
 
 export const eventlist: Module.EventProps[] = Util.sortEventsByDate(event_unsorted);
