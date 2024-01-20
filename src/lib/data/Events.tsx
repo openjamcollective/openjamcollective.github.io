@@ -13,6 +13,7 @@ import dancetogether from '../images/Dance_Together.png';
 import unitydpt from '../images/Unity_Davenport.jpg';
 import unityprogram from '../images/Unity_Program.jpg';
 import unitygroup from '../images/Unity_Group.jpg';
+import fiff_photo from "../images/fiff.png";
 import * as Util from '../util';
 import { MediaType } from '../util';
 
@@ -145,6 +146,17 @@ export const unitydavenport: Module.EventProps = {
     event: MediaType.Program
 }
 
+export const fiff: Module.EventProps = {
+    name: 'F is for Funk',
+    about: '1v1 Open Styles Battle',
+    date: [new Date(2024, 1, 17)],
+    location: dvpch,
+    media: fiff_photo,
+    instagram: 'p/C2ILWklAhNA/',
+    facebook: '1504067116806534',
+    event: MediaType.Normal
+}
+
 export const event_unsorted: Module.EventProps[] = [
     potb, 
     cotb, 
@@ -155,6 +167,8 @@ export const event_unsorted: Module.EventProps[] = [
     bickfordboogie, 
     dancetogetherfest, 
     unityfall,
-    unitydavenport];
+    unitydavenport,
+    fiff
+];
 
 export const eventlist: Module.EventProps[] = Util.sortEventsByDate(event_unsorted);
