@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b4f8e5a4.css",
-    "main.js": "/static/js/main.801ad8c4.js",
+    "main.css": "/static/css/main.d183d061.css",
+    "main.js": "/static/js/main.ee2a729c.js",
     "static/js/787.a03ba732.chunk.js": "/static/js/787.a03ba732.chunk.js",
     "static/media/BickfordBoogie2.jpg": "/static/media/BickfordBoogie2.bf4ed4d2949b0647005d.jpg",
     "static/media/Keith2.jpg": "/static/media/Keith2.92e65c01a7bab4d90517.jpg",
@@ -15,6 +15,7 @@
     "static/media/BOTBPoster.png": "/static/media/BOTBPoster.d75be9bac474806b211b.png",
     "static/media/Dance_Together.png": "/static/media/Dance_Together.e677640d11c9542b516f.png",
     "static/media/dp.png": "/static/media/dp.c25e09eeb69870a0bd81.png",
+    "static/media/fiff.png": "/static/media/fiff.260586b8280faac09b80.png",
     "static/media/potb2.png": "/static/media/potb2.9add791efc32904345b0.png",
     "static/media/Funk_4_Fun.jpg": "/static/media/Funk_4_Fun.5ceb86758e00c7fed406.jpg",
     "static/media/Luis.jpg": "/static/media/Luis.c7f82fafc1974708c3ee.jpg",
@@ -25,12 +26,12 @@
     "static/media/Unity_Program.jpg": "/static/media/Unity_Program.0ff9ac2568d9b6c7b719.jpg",
     "static/media/OJC_Full.png": "/static/media/OJC_Full.52e54a5e32273496c119.png",
     "index.html": "/index.html",
-    "main.b4f8e5a4.css.map": "/static/css/main.b4f8e5a4.css.map",
-    "main.801ad8c4.js.map": "/static/js/main.801ad8c4.js.map",
+    "main.d183d061.css.map": "/static/css/main.d183d061.css.map",
+    "main.ee2a729c.js.map": "/static/js/main.ee2a729c.js.map",
     "787.a03ba732.chunk.js.map": "/static/js/787.a03ba732.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4f8e5a4.css",
-    "static/js/main.801ad8c4.js"
+    "static/css/main.d183d061.css",
+    "static/js/main.ee2a729c.js"
   ]
 }
