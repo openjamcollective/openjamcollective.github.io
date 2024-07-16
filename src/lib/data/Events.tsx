@@ -14,6 +14,8 @@ import unitydpt from '../images/Unity_Davenport.jpg';
 import unityprogram from '../images/Unity_Program.jpg';
 import unitygroup from '../images/Unity_Group.jpg';
 import fiff_photo from "../images/fiff.png";
+import borderless_photo from "../images/borderless.jpg";
+import belly_photo from "../images/belly.jpg";
 import * as Util from '../util';
 import { MediaType } from '../util';
 
@@ -157,6 +159,28 @@ export const fiff: Module.EventProps = {
     event: MediaType.Normal
 }
 
+export const borderless: Module.EventProps = {
+    name: 'Borderless Boogie',
+    about: '1v1 Popping & 1v1 Animation Battles',
+    date: [new Date(2024, 7, 10)],
+    location: "Evergreen Brick Works",
+    media: borderless_photo,
+    instagram: 'p/C9X7AQpyDh1/',
+    facebook: '8055331731156456',
+    event: MediaType.Normal
+}
+
+export const belly: Module.EventProps = {
+    name: 'Belly of the Beatz',
+    about: '1v1 Popping Battle',
+    date: [new Date(2024, 5, 8)],
+    location: "Earl Bales Park",
+    media: belly_photo,
+    instagram: 'p/C7PoSE6Pjg2/',
+    facebook: '7558081957593863',
+    event: MediaType.Normal
+}
+
 export const event_unsorted: Module.EventProps[] = [
     potb, 
     cotb, 
@@ -168,7 +192,9 @@ export const event_unsorted: Module.EventProps[] = [
     dancetogetherfest, 
     unityfall,
     unitydavenport,
-    fiff
+    fiff,
+    borderless,
+    belly
 ];
 
 export const eventlist: Module.EventProps[] = Util.sortEventsByDate(event_unsorted);
