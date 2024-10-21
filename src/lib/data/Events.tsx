@@ -16,6 +16,8 @@ import unitygroup from '../images/Unity_Group.jpg';
 import fiff_photo from "../images/fiff.png";
 import borderless_photo from "../images/borderless.jpg";
 import belly_photo from "../images/belly.jpg";
+import unity_ojc from "../images/UnityOjc.jpg";
+import botsnbolts from "../images/BotsNBolts.jpeg";
 import * as Util from '../util';
 import { MediaType } from '../util';
 
@@ -170,6 +172,26 @@ export const borderless: Module.EventProps = {
     event: MediaType.Normal
 }
 
+export const botsnboltsevent: Module.EventProps = {
+    name: 'Bots N Bolts',
+    about: '1v1 Popping Battle',
+    date: [new Date(2024, 9, 4)],
+    location: dvpch,
+    media: botsnbolts,
+    instagram: 'p/C_9DNhrS69U/',
+    event: MediaType.Normal
+}
+
+export const unity2024: Module.EventProps = {
+    name: 'Unity Charity Workshops',
+    about: 'Weekly Popping Program',
+    date: [new Date(2024, 9, 25), new Date(2024, 11, 13)],
+    location: UNITY_STUDIO,
+    media: unity_ojc,
+    instagram: 'p/DAtbqefSo_7/',
+    event: MediaType.Program
+}
+
 export const belly: Module.EventProps = {
     name: 'Belly of the Beatz',
     about: '1v1 Popping Battle',
@@ -194,7 +216,9 @@ export const event_unsorted: Module.EventProps[] = [
     unitydavenport,
     fiff,
     borderless,
-    belly
+    belly,
+    botsnboltsevent,
+    unity2024
 ];
 
 export const eventlist: Module.EventProps[] = Util.sortEventsByDate(event_unsorted);

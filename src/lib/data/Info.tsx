@@ -8,10 +8,10 @@ export const mission: Module.InfoProps = {
 export const objectives: Module.InfoProps = {
     title: 'Objectives',
     info: ['Create spaces for beginner and experienced street dancers of all ages to get together, express themselves, and build relationships',
-    'Provide opportunities for the broader community to learn, engage, and/or participate in street dance and street dance culture',
-    'Organize a one-time festival of street dance in Toronto, Canada',
-    'Build a relationship with the City of Toronto in hopes of receiving direct and/or financial support for street dancers in the future',
-    'Be a point of contact for out-of-town dancers to learn and/or connect with the street dance community in Toronto',
+    'Provide opportunities for the broader community to learn, engage, participate, and/or elevate in skill level in street dance and street dance culture by connecting international artists to the Toronto street dance community',
+    'Organize an annual festival of street dance in Toronto, Canada that attracts the global street dance scene',
+    'Build a relationship with the City of Toronto in hopes of receiving direct and/or financial support for street dancers "and street dance culture" in the future',
+    'Be a point of contact for out-of-town dancers to learn and/or connect with the street dance community in Toronto and "create a mutual support network"',
     'Be a part of fostering and promoting street dance culture and resistance in the broader community'
 ]
 }
