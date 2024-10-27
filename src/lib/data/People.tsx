@@ -8,13 +8,14 @@ export const diana: Module.PersonProps = {
     name: 'Diana Da Silva',
     about: 'Diana Da Silva is a caregiver, activist, migrant justice community organizer, community builder, grant writer, second generation settler, multi disciplined mover, and artist. She likes to spend most of her time dreaming and building a better world where dance is present and vibrant.',
     fb: 'dasilvapereiradiana',
+    social: 'dianapereiradasilva1991/',
     media: DIANA_PHOTO,
     photo_style: "horizontal-rect"
 }
 
 export const luis: Module.PersonProps = {
     name: 'Luis Miguel',
-    about: 'Luis Miguel aka “Cheech”, is a seasoned professional street dance instructor, choreographer, street performer, competitive battler, and community leader. He has been active in the street dance community for over 10 years, and one of his goals is to continue to expand street dance culture as a fellow grant recipient of Ontario Community Changemakers!',
+    about: 'Luis "Cheech" Miguel is a seasoned Popper/Tutter/choreographer and Street Performer. Hailing from Puebla Mexico, but residing in Toronto Ontario, he has been an active member of the street dance community for over a decade, representing either Funkyverse Crew, D.O.T, and Soul Junkiez Crew. Cheech mixes traditional technique with crazy concepts and high performance energy, resulting in winning over 20 battles and the national championship at HHI in 2024! ',
     social: 'cheech1teach1/',
     media: LUIS_PHOTO
 }
