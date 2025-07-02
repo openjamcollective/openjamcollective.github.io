@@ -9,15 +9,18 @@ import daven2 from '../images/dpnchc.jpg';
 import fffp from '../images/Funk_4_Fun.jpg';
 import bboogie from '../images/BickfordBoogie.png';
 import bboogie2 from '../images/BickfordBoogie2.jpg';
+import borderless2 from "../images/bboogie2.jpg";
 import dancetogether from '../images/Dance_Together.png';
 import unitydpt from '../images/Unity_Davenport.jpg';
 import unityprogram from '../images/Unity_Program.jpg';
 import unitygroup from '../images/Unity_Group.jpg';
+import unity25 from "../images/unity25.jpg";
 import fiff_photo from "../images/fiff.png";
 import borderless_photo from "../images/borderless.jpg";
 import belly_photo from "../images/belly.jpg";
 import unity_ojc from "../images/UnityOjc.jpg";
 import botsnbolts from "../images/BotsNBolts.jpeg";
+import jamnjuice from "../images/JamNJuicePoster_version5.png";
 import * as Util from '../util';
 import { MediaType } from '../util';
 
@@ -192,6 +195,16 @@ export const unity2024: Module.EventProps = {
     event: MediaType.Program
 }
 
+export const unity2025: Module.EventProps = {
+    name: 'Street Dance Drop In Sessions',
+    about: 'Weekly Street Dance Sessions',
+    date: [new Date(2025, 0, 15), new Date(2025, 2, 19)],
+    location: dvpch,
+    media: unity25,
+    instagram: 'p/DEyFuwcSskH/',
+    event: MediaType.Program
+}
+
 export const belly: Module.EventProps = {
     name: 'Belly of the Beatz',
     about: '1v1 Popping Battle',
@@ -200,6 +213,26 @@ export const belly: Module.EventProps = {
     media: belly_photo,
     instagram: 'p/C7PoSE6Pjg2/',
     facebook: '7558081957593863',
+    event: MediaType.Normal
+}
+
+export const borderlessboogie2: Module.EventProps = {
+    name: 'Borderless Boogie 2',
+    about: '2v2 Popping Battle',
+    date: [new Date(2025, 1, 8)],
+    location: dvpch,
+    media: borderless2,
+    instagram: 'p/DDrsUnExBPe/',
+    event: MediaType.Normal
+}
+
+export const jnj: Module.EventProps = {
+    name: 'Jam N Juice',
+    about: 'Dance Party',
+    date: [new Date(2025, 5, 28)],
+    location: "District 9",
+    media: jamnjuice,
+    instagram: 'p/DKcA3gCtxO2/',
     event: MediaType.Normal
 }
 
@@ -218,7 +251,10 @@ export const event_unsorted: Module.EventProps[] = [
     borderless,
     belly,
     botsnboltsevent,
-    unity2024
+    unity2024,
+    unity2025,
+    jnj,
+    borderlessboogie2
 ];
 
 export const eventlist: Module.EventProps[] = Util.sortEventsByDate(event_unsorted);
