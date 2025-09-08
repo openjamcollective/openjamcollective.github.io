@@ -31,19 +31,47 @@ const dvpch = "Davenport-Perth Neighbourhood and Community Health Centre";
 const bickford = "Bickford Park";
 const UNITY_STUDIO = "Unity Charity";
 const ASSEMBLY_PARK = "Assembly Park";
+const location = {
+ BENTWAY : "The Bentway Studio",
+ COIN8 : "Coin 8 Studio",
+ DVPCH : "Davenport-Perth Neighbourhood and Community Health Centre",
+ BICKFORD : "Bickford Park",
+ UNITY_STUDIO : "Unity Charity",
+ ASSEMBLY_PARK : "Assembly Park"
+}
+const collaborators = {
+    EQUITAS : "Equitas",
+    UNITY : "Unity Charity",
+    WAFF : "We Are Family Foundation",
+    TAC : "Toronto Arts Council",
+    REDBULL : "Red Bull",
+    DONATIONS: "Donations",
+    CITIES880: "880 Cities",
+    OCC: "Ontario Community Changemakers",
+    TORONTO: "City of Toronto",
+    DVPCH : "Davenport-Perth Neighbourhood and Community Health Centre",
+    PARKPEOPLE: "Park People",
+    EVERGREEN: "Evergreen Brickworks"
+} 
+const eventFormat = {
+    pop : '1v1 Popping Battle'
+}
+
 
 export const botb: Module.EventProps = {
     name: 'Boogie On The Block',
     about: '1v1 Popping Battle',
     role: 'Organizer',
     date: [new Date(2022, 3, 30)],
-    location: bentway,
+    location: location.BENTWAY,
     media: botbp,
     instagram: '/p/CdAZ_6nuVT-/',
     facebook: '970824263797543',
     video: '4Cr8iaauP4U',
     link: 'botb',
-    event: MediaType.Normal
+    event: MediaType.Normal,
+    attendees: 100,
+    affiliates: [{name: collaborators.EQUITAS, fund: 1150}, {name: collaborators.REDBULL, fund: 1485}, {name: collaborators.DONATIONS, fund: 535}]
 }
 
 export const cotb: Module.EventProps = {
@@ -57,7 +85,9 @@ export const cotb: Module.EventProps = {
     facebook: '431711305467858',
     video: 'd2mMJJVw_mk',
     link: 'cotb',
-    event: MediaType.Normal
+    event: MediaType.Normal,
+    attendees: 100,
+    affiliates: [ {name: collaborators.CITIES880, fund: 570}, {name: collaborators.DONATIONS, fund: 1250}]
 }
 
 export const potb: Module.EventProps = {
@@ -71,7 +101,9 @@ export const potb: Module.EventProps = {
     facebook: '1116902578989034',
     media2: potbp2,
     link: 'cotb',
-    event: MediaType.Normal
+    event: MediaType.Normal,
+    attendees: 100,
+    affiliates: [ {name: collaborators.CITIES880, fund: 1230}, {name: collaborators.OCC, fund: 800}, {name: collaborators.DONATIONS, fund: 338}]
 }
 
 export const topopping: Module.EventProps = {
@@ -84,7 +116,9 @@ export const topopping: Module.EventProps = {
     instagram: 'p/CkwhtZ-toKU/',
     video: 'yt46sesZX5w',
     link: 'topopping',
-    event: MediaType.Series
+    event: MediaType.Series,
+    attendees: 60,
+    affiliates: [ {name: collaborators.DONATIONS, fund: 300}]
 }
 
 export const dperth: Module.EventProps = {
@@ -96,7 +130,9 @@ export const dperth: Module.EventProps = {
     media2: daven2,
     instagram: 'p/CmZx7VBv3G0/',
     link: 'sessions',
-    event: MediaType.Program
+    attendees: 15,
+    event: MediaType.Program,
+    affiliates: [ {name: collaborators.DVPCH, fund: 1250}]
 }
 
 export const fff: Module.EventProps = {
@@ -107,7 +143,9 @@ export const fff: Module.EventProps = {
     media: fffp,
     instagram: 'p/Co3TsXQt6wn/',
     facebook: '1534855293677206',
-    event: MediaType.Festival
+    event: MediaType.Festival,
+    attendees: 100,
+    affiliates: [{name:collaborators.TORONTO, fund: 4000}]
 }
 
 export const bickfordboogie: Module.EventProps = {
@@ -119,7 +157,10 @@ export const bickfordboogie: Module.EventProps = {
     media2: bboogie2,
     instagram: 'p/CuXHt1BgBTF/',
     facebook: '966716321244992',
-    event: MediaType.Normal
+    event: MediaType.Normal,
+    attendees: 100,
+    affiliates: [{name: collaborators.PARKPEOPLE, fund: 750}, {name: collaborators.DONATIONS, fund: 250}]
+
 }
 
 export const dancetogetherfest: Module.EventProps = {
@@ -140,7 +181,9 @@ export const unityfall: Module.EventProps = {
     media: unityprogram,
     media2: unitygroup,
     instagram: 'p/CxoIJkXPheY/',
-    event: MediaType.Program
+    event: MediaType.Program,
+    attendees: 20,
+    affiliates: [{name: collaborators.UNITY, fund: 1880}]
 }
 
 export const unitydavenport: Module.EventProps = {
@@ -150,7 +193,9 @@ export const unitydavenport: Module.EventProps = {
     location: dvpch,
     media: unitydpt,
     instagram: 'p/C0FfzVmvqf1/',
-    event: MediaType.Program
+    event: MediaType.Program,
+    attendees: 20,
+    affiliates: [{name: collaborators.UNITY, fund: 1700}]
 }
 
 export const fiff: Module.EventProps = {
@@ -161,7 +206,9 @@ export const fiff: Module.EventProps = {
     media: fiff_photo,
     instagram: 'p/C2ILWklAhNA/',
     facebook: '1504067116806534',
-    event: MediaType.Normal
+    event: MediaType.Normal,
+    attendees: 100,
+    affiliates: [{name: collaborators.UNITY, fund: 3000}]
 }
 
 export const borderless: Module.EventProps = {
@@ -172,7 +219,9 @@ export const borderless: Module.EventProps = {
     media: borderless_photo,
     instagram: 'p/C9X7AQpyDh1/',
     facebook: '8055331731156456',
-    event: MediaType.Normal
+    event: MediaType.Normal,
+    attendees: 100,
+    affiliates: [{name: collaborators.EVERGREEN, fund: 1000}, {name: collaborators.WAFF, fund: 10000}]
 }
 
 export const botsnboltsevent: Module.EventProps = {
@@ -182,7 +231,9 @@ export const botsnboltsevent: Module.EventProps = {
     location: dvpch,
     media: botsnbolts,
     instagram: 'p/C_9DNhrS69U/',
-    event: MediaType.Normal
+    event: MediaType.Normal,
+    attendees: 100,
+    affiliates: [{name: collaborators.WAFF, fund: 2800}, {name: collaborators.DONATIONS, fund: 150}]
 }
 
 export const unity2024: Module.EventProps = {
@@ -192,7 +243,10 @@ export const unity2024: Module.EventProps = {
     location: UNITY_STUDIO,
     media: unity_ojc,
     instagram: 'p/DAtbqefSo_7/',
-    event: MediaType.Program
+    event: MediaType.Program, 
+    attendees: 20,
+    affiliates: [{name: collaborators.UNITY, fund: 1450}]
+
 }
 
 export const unity2025: Module.EventProps = {
@@ -202,7 +256,9 @@ export const unity2025: Module.EventProps = {
     location: dvpch,
     media: unity25,
     instagram: 'p/DEyFuwcSskH/',
-    event: MediaType.Program
+    event: MediaType.Program,
+    attendees: 20,
+    affiliates: [{name: collaborators.UNITY, fund: 1260}]
 }
 
 export const belly: Module.EventProps = {
@@ -213,7 +269,9 @@ export const belly: Module.EventProps = {
     media: belly_photo,
     instagram: 'p/C7PoSE6Pjg2/',
     facebook: '7558081957593863',
-    event: MediaType.Normal
+    event: MediaType.Normal,
+    attendees: 150,
+    affiliates: [{name:collaborators.TAC, fund: 10000}]
 }
 
 export const borderlessboogie2: Module.EventProps = {
@@ -223,7 +281,9 @@ export const borderlessboogie2: Module.EventProps = {
     location: dvpch,
     media: borderless2,
     instagram: 'p/DDrsUnExBPe/',
-    event: MediaType.Normal
+    event: MediaType.Normal,
+    attendees: 100,
+    affiliates: [{name: collaborators.WAFF, fund: 800}]
 }
 
 export const jnj: Module.EventProps = {
@@ -233,7 +293,9 @@ export const jnj: Module.EventProps = {
     location: "District 9",
     media: jamnjuice,
     instagram: 'p/DKcA3gCtxO2/',
-    event: MediaType.Normal
+    event: MediaType.Normal,
+    attendees: 100,
+    affiliates: [{name: collaborators.EQUITAS, fund: 750}, {name: collaborators.DONATIONS, fund: 900}]
 }
 
 export const event_unsorted: Module.EventProps[] = [

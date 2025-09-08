@@ -29,10 +29,11 @@ export interface EventProps {
     role?: string
     event: MediaType
     affiliates?: AffiliateProps[]
+    attendees?: number
 }
 
 export interface AffiliateProps {
     name: string
-    role: string
+    fund: number
 }
 
