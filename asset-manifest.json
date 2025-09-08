@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.eb31869b.css",
-    "main.js": "/static/js/main.64ffc020.js",
+    "main.js": "/static/js/main.545ed543.js",
     "static/js/787.0a7e686c.chunk.js": "/static/js/787.0a7e686c.chunk.js",
     "static/media/BickfordBoogie2.jpg": "/static/media/BickfordBoogie2.bf4ed4d2949b0647005d.jpg",
     "static/media/Keith2.jpg": "/static/media/Keith2.92e65c01a7bab4d90517.jpg",
@@ -34,11 +34,11 @@
     "static/media/OJC_Full.png": "/static/media/OJC_Full.52e54a5e32273496c119.png",
     "index.html": "/index.html",
     "main.eb31869b.css.map": "/static/css/main.eb31869b.css.map",
-    "main.64ffc020.js.map": "/static/js/main.64ffc020.js.map",
+    "main.545ed543.js.map": "/static/js/main.545ed543.js.map",
     "787.0a7e686c.chunk.js.map": "/static/js/787.0a7e686c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eb31869b.css",
-    "static/js/main.64ffc020.js"
+    "static/js/main.545ed543.js"
   ]
 }
