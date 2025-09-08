@@ -8,7 +8,7 @@ const Home:React.FC =() =>{
     return(
         <header className="App-header image-container">
             <div className="row">
-                <p><i>"For the community, by the community" - Luis Miguel</i></p>
+                <p><i>"For the community, by the community." - Luis Miguel</i></p>
             </div>
             <img className="home-image" src={botb}/>
         </header>
