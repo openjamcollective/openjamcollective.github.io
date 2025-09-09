@@ -14,25 +14,22 @@ const Contact:React.FC =() =>{
 
 const contactInfo = () => {
     return <div>
-        <h4 className='no-margins'><i>Contact us</i></h4>
+        <h4 className='no-margins'>
+            <i>Contact us</i>
+        </h4>
         <div className='logo-info'>
             <a>
                 <img className="logo-image" src={email}/>
             </a>
             <p>openjamcollective@gmail.com</p>
         </div>
-        <div className='logo-info'>
+        <div className='logo-info down-bad'>
             <a href='https://www.instagram.com/openjamcollective/'>
                 <img className="ig-logo" src={iglogo}/>
             </a>
             <p>@openjamcollective</p>
         </div>
-        <div className='logo-info down-bad'>
-            <a href='https://discord.gg/ymebyDZ9H5'>
-                <img className="med-logo" src={discord_logo}/>
-            </a>
-            <p>TO Street Dance</p>
-        </div>
+        
     </div>
 }
 export default Contact;
