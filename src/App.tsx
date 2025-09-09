@@ -13,6 +13,7 @@ import About from './page/About';
 import Organization from './page/Organization';
 import Events from './page/Events';
 import Contact from './page/Contact';
+import Stats from './page/Stats';
 import {eventlist} from './lib/data/Events';
 import EventCard from './components/events/EventPanel';
 import EventPanel from './components/events/EventPanel';
@@ -25,6 +26,7 @@ function App() {
         <Routes>
           <Route path="/about/ojc" element={<Organization/>} />
           <Route path="/about/members" element={<About/>} />
+          <Route path="/events/stats" element={<Stats/>} />
           <Route path="/events" element={<Events/>} />
           <Route path="/contact" element={<Contact/>} />
           {eventlist.map(event=>

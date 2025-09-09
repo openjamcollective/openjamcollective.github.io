@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import {eventlist} from '../lib/data/Events';
 import EventCard from '../components/events/EventCard';
+import { AffiliateProps } from '../lib/interfaces';
 const Events: React.FC = () => {
     const pageSize = 3; // Number of EventCards per page
     const [currentPage, setCurrentPage] = useState(1);
@@ -15,14 +16,45 @@ const Events: React.FC = () => {
       setCurrentPage((prevPage: number) => Math.max(prevPage - 1, 1));
     };
   
+      // 👇 Create a map of affiliateName -> totalFunds
+  const affiliateFunds = useMemo(() => {
+    const map: Record<string, number> = {};
+
+    eventlist.forEach((event) => {
+      event.affiliates?.forEach((affiliate: AffiliateProps) => {
+        map[affiliate.name] = (map[affiliate.name] || 0) + affiliate.fund;
+      });
+    });
+
+    return map;
+  }, [eventlist]);
+
+  // 👇 Calculate grand total
+  const totalFunds = useMemo(() => {
+    return Object.values(affiliateFunds).reduce((sum, val) => sum + val, 0);
+  }, [affiliateFunds]);
     const startIndex = (currentPage - 1) * pageSize;
     const endIndex = startIndex + pageSize;
+    
   
     return (
       <header className="App-header">
         <h4>
           <i>Events</i>
         </h4>
+              {/* <div>
+        <h5>Affiliate Contributions</h5>
+        <ul>
+          {Object.entries(affiliateFunds)
+          .sort(([, a], [, b]) => b - a)
+          .map(([name, fund]) => (
+          <div key={name}>
+            {name}: {fund}
+          </div>
+          ))}
+        </ul>
+        <p><b>Total Funds: {totalFunds}</b></p>
+      </div> */}
         <div className="container pagedisplay content-sec">
           <div className="row">
             {eventlist.slice(startIndex, endIndex).map((event, index) => {

@@ -3,15 +3,11 @@ import { Link } from 'react-router-dom';
 import ojc from '../../lib/images/OJC_Full.png';
 import menuIcon from '../../lib/images/icons8-menu-squared-50.png';
 import './Navbar.css'
+import Dropdown from './Dropdown';
 
 const NaviBar: React.FC = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [smallScreen, setSmallScreen] = useState(false);
-
-  const toggleDropdown = () => {
-    setShowDropdown(!showDropdown);
-  };
 
   const handleClick = () => {
     setNavbarOpen(!navbarOpen);
@@ -40,10 +36,8 @@ const NaviBar: React.FC = () => {
           <li className='nav-li'>
             <Link to="/">Home</Link>
           </li>
-         {smallScreen ? aboutNavSmall(): aboutNavBig()} 
-          <li className='nav-li'>
-            <Link to="/events">Events</Link>
-          </li>
+          <Dropdown title={'About'} links={new Map<string, string>([["/about/ojc", "Organization"], ["/about/members", "Team"]])} />
+          <Dropdown title={'Events'} links={new Map<string, string>([["/events", smallScreen ? "Events" : "List"], ["/events/stats", "Stats"]])} />
           <li className='nav-li'>
             <Link to="/contact">Contact</Link>
           </li>
@@ -52,35 +46,6 @@ const NaviBar: React.FC = () => {
     );
   }
 
-  const aboutNavBig = () => {
-    return (<li className='nav-li' 
-    onClick={toggleDropdown} 
-    onMouseEnter={() => setShowDropdown(true)}
-    onMouseLeave={() => setShowDropdown(false)}>
-      About
-      {showDropdown && (
-        <ul className='nav-ul-sub'>
-          <li>
-            <Link to="/about/ojc">Organization</Link>
-          </li>
-          <li>
-            <Link to="/about/members">Team</Link>
-          </li>
-        </ul>
-      )}
-    </li>)
-  }
-
-  const aboutNavSmall = () => {
-    return (<div>
-      <li className='nav-li'>
-            <Link to="/about/ojc">Organization</Link>
-          </li>
-          <li className='nav-li'>
-            <Link to="/about/members">Team</Link>
-          </li>
-    </div>)
-  }
 
   return (
     <div className="nav-bar">
