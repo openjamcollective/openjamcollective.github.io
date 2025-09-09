@@ -7,10 +7,17 @@ import './Page.css';
 const Home:React.FC =() =>{
     return(
         <header className="App-header image-container">
-            <div className="row">
-                <p><i>"For the community, by the community." - Luis Miguel</i></p>
+            <div className="row"
+                        style={{
+                width: '100%',
+                height: '100vh',
+                backgroundImage: `url(${botb})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+            }}>
+                <p className="quote"><i>"For the community, by the community." - Luis Miguel</i></p>
             </div>
-            <img className="home-image" src={botb}/>
+            <div className="home-image"></div>
         </header>
     )
 }

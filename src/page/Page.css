@@ -1,3 +1,4 @@
+
 .logo-image{
     /* max-width: -webkit-fill-available; */
     max-width: 500px;
@@ -51,8 +52,25 @@
 }
 
 .home-image{
-    width: -webkit-fill-available;
+        /* margin: 0; */
+        /* width: 100%;
+        height: 100%;  */
+        background-image: url('../lib/images/BOTB_Clean.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 }
+/* @media screen and (max-width: 768px) {
+    .home-image{
+        margin: 0;
+        width: 100%;
+        height: 100%; 
+        background-image: url('../lib/images/BOTB_Clean.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+} */
 
 .small-image{
     max-width: 50px;
@@ -91,4 +109,12 @@
 .contact{
     justify-content: inherit;
     padding-top: 10%;
+}
+
+.quote {
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;      /* rounded corners */
+  display: inline-block;   /* shrink wrap to text */
 }
