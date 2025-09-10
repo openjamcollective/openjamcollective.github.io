@@ -4,6 +4,12 @@ import { EventProps } from '../lib/interfaces';
 const History:React.FC =() =>{
     return(
         <header className="App-header">
+        <h4><i>History</i></h4>
+        <div className="container pagedisplay content-sec">
+            <p>The street dance style of popping originated in the 1970s in California, particularly Oakland and Los Angeles with groups like the Electric Boogaloos</p>
+            <p>Toronto has made its impact in popping through various notable events, crews, and individuals. Below is a timeline of it</p>
+        </div>
+        
         <div className="container pagedisplay content-sec stats-grid">
             <div className="grid-header">Year</div>
             <div className="grid-header">Groups/Individuals</div>
