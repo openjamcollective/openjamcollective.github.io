@@ -20,18 +20,18 @@ const Stats:React.FC =() =>{
       }, [affiliateFunds]);
     return(
         <header className="App-header">
+        <h4><i>Collaborators</i></h4>
         <div>
-            <h5>Affiliate Contributions</h5>
             <ul>
             {Object.entries(affiliateFunds)
             .sort(([, a], [, b]) => b - a)
             .map(([name, fund]) => (
             <div key={name}>
-                {name}: {fund}
+                {name}
             </div>
             ))}
             </ul>
-            <p><b>Total Funds: {totalFunds}</b></p>
+            {/* <p><b>Total Funds: {totalFunds}</b></p> */}
         </div>
       </header>
     )
