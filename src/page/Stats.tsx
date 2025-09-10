@@ -38,7 +38,7 @@ const Stats:React.FC =() =>{
         <div>
             <p>All events and programs OJC has done has been free to create accessibility within the city</p>
             <p># Events with over 100+ attendees: {totalEvents[0]}</p>
-            <p># Programs: {totalEvents[1]}</p>
+            <p># Weekly Programs: {totalEvents[1]}</p>
         </div>
         <h4><i>Collaborators</i></h4>
         
