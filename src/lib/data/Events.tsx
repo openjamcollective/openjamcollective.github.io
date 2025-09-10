@@ -37,7 +37,8 @@ const location = {
  DVPCH : "Davenport-Perth Neighbourhood and Community Health Centre",
  BICKFORD : "Bickford Park",
  UNITY_STUDIO : "Unity Charity",
- ASSEMBLY_PARK : "Assembly Park"
+ ASSEMBLY_PARK : "Assembly Park",
+ TORONTO: "Toronto"
 }
 const collaborators = {
     EQUITAS : "Equitas",
@@ -296,6 +297,37 @@ export const jnj: Module.EventProps = {
     event: MediaType.Normal,
     attendees: 100,
     affiliates: [{name: collaborators.EQUITAS, fund: 750}, {name: collaborators.DONATIONS, fund: 900}]
+}
+
+export const funkforyourfeet: Module.EventProps = {
+    name: "Funk For Your Feet",
+    about: '1v1 Popping Battle',
+    date: [new Date(2009)],
+    location: location.TORONTO,
+    event: MediaType.Normal,
+    affiliates: [{name: "Fantastic Poppers", fund: 0}],
+    video: "p_zxh3o1qgw"
+}
+
+export const area51: Module.EventProps = {
+    name: "Area 51",
+    about: '1v1 Popping Battle',
+    date: [new Date(2013)],
+    location: location.TORONTO,
+    event: MediaType.Normal,
+    affiliates: [{name: "Moon Runners", fund: 0}],
+    video: "sz_0Z6MQw04",
+    instagram: "inyourareafest"
+}
+
+export const topoppingold: Module.EventProps = {
+    name: "TO Popping Battles",
+    about: '1v1 Popping Battle',
+    date: [new Date(2018)],
+    location: location.TORONTO,
+    event: MediaType.Normal,
+    affiliates: [{name: "5Cent", fund: 0}],
+    instagram: "torontopopping"
 }
 
 export const event_unsorted: Module.EventProps[] = [

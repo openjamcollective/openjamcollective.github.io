@@ -51,6 +51,15 @@ export const sortEventsByDate = (arr: Module.EventProps[]) => {
     });
   };
 
+export const sortErasByDate = (arr: Module.PopProps[]) => {
+    return arr.sort((a, b) => {
+      // Sort the dates in descending order (latest first)
+      var time_a: number = a.year;
+      var time_b: number = b.year;
+      return time_a - time_b;
+    });
+  };
+
 export const getLatestDate = (dates: Date[]) => {
     return dates.reduce((latest, current) => {
       // If the current date is later than the latest date, return the current date

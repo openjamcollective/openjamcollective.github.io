@@ -72,9 +72,6 @@
     padding-bottom: 2rem;
 }
 
-/* .session{
-    font-size: 15px;
-} */
 
 .no-margins{
     margin: 0;
@@ -95,4 +92,24 @@
   padding: 10px 20px;
   border-radius: 8px;      /* rounded corners */
   display: inline-block;   /* shrink wrap to text */
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 equal columns */
+  gap: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.grid-header {
+  font-weight: bold;
+  background-color: #ae5d22;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+}
+
+.stats-grid div {
+  padding: 10px;
+  border: 1px solid #ddd;
 }

@@ -9,6 +9,13 @@ export interface PersonProps {
     photo_style?: string
 }
 
+export interface PopProps {
+    individuals?: string []
+    year: number
+    groups?: string []
+    events?: EventProps[]
+}
+
 export interface InfoProps {
     title: string
     info: string[]

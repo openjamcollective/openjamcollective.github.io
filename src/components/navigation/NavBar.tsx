@@ -36,7 +36,7 @@ const NaviBar: React.FC = () => {
           <li className='nav-li'>
             <Link to="/">Home</Link>
           </li>
-          <Dropdown title={'About'} links={new Map<string, string>([["/about/ojc", "Organization"], ["/about/members", "Team"]])} />
+          <Dropdown title={'About'} links={new Map<string, string>([["/about/ojc", "Organization"], ["/about/members", "Team"], ["/about/history", "History"]])} />
           <Dropdown title={'Events'} links={new Map<string, string>([["/events", smallScreen ? "Events" : "List"], ["/events/stats", "Stats"]])} />
           <li className='nav-li'>
             <Link to="/contact">Contact</Link>

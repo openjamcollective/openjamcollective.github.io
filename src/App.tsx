@@ -10,6 +10,7 @@ import './App.css';
 import NaviBar from './components/navigation/NavBar';
 import Home from './page/Home';
 import About from './page/About';
+import History from './page/History';
 import Organization from './page/Organization';
 import Events from './page/Events';
 import Contact from './page/Contact';
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/about/ojc" element={<Organization/>} />
           <Route path="/about/members" element={<About/>} />
+          <Route path="/about/history" element={<History/>} />
           <Route path="/events/stats" element={<Stats/>} />
           <Route path="/events" element={<Events/>} />
           <Route path="/contact" element={<Contact/>} />
