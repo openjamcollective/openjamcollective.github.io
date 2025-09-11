@@ -21,6 +21,17 @@ import belly_photo from "../images/belly.jpg";
 import unity_ojc from "../images/UnityOjc.jpg";
 import botsnbolts from "../images/BotsNBolts.jpeg";
 import jamnjuice from "../images/JamNJuicePoster_version5.png";
+import cities880 from "../images/880-logo-menu-green.png";
+import dvplogo from "../images/davenportlogo.png";
+import equitas from "../images/equitas_logo.en_.png";
+import fam from "../images/family_logo.png";
+import occ from "../images/OCC.png";
+import parkppl from "../images/Park-People-stack-logo.png";
+import redbull from "../images/Red-Bull-logo.png";
+import toronto from "../images/Toronto,_City_of.svg.png";
+import unity from "../images/unity.png";
+import tac from "../images/tornto-arts-council.png";
+import evergreen from "../images/evergreen.png";
 import * as Util from '../util';
 import { MediaType } from '../util';
 
@@ -40,20 +51,64 @@ const location = {
  ASSEMBLY_PARK : "Assembly Park",
  TORONTO: "Toronto"
 }
-const collaborators = {
-    EQUITAS : "Equitas",
-    UNITY : "Unity Charity",
-    WAFF : "We Are Family Foundation",
-    TAC : "Toronto Arts Council",
-    REDBULL : "Red Bull",
-    DONATIONS: "Donations",
-    CITIES880: "880 Cities",
-    OCC: "Ontario Community Changemakers",
-    TORONTO: "City of Toronto",
-    DVPCH : "Davenport-Perth Neighbourhood and Community Health Centre",
-    PARKPEOPLE: "Park People",
-    EVERGREEN: "Evergreen Brickworks"
+export const collaborators = {
+  EQUITAS: {
+    name: "Equitas",
+    image: equitas
+  },
+  UNITY: {
+    name: "Unity Charity",
+    image: unity
+  },
+  WAFF: {
+    name: "We Are Family Foundation",
+    image: fam
+  },
+  TAC: {
+    name: "Toronto Arts Council",
+    image: tac
+  },
+  REDBULL: {
+    name: "Red Bull",
+    image: redbull
+  },
+  DONATIONS: {
+    name: "Donations"
+  },
+  CITIES880: {
+    name: "880 Cities",
+    image: cities880
+  },
+  OCC: {
+    name: "Ontario Community Changemakers",
+    image: occ
+  },
+  TORONTO: {
+    name: "City of Toronto",
+    image: toronto
+  },
+  DVPCH: {
+    name: "Davenport-Perth Neighbourhood and Community Health Centre",
+    image: dvplogo
+  },
+  PARKPEOPLE: {
+    name: "Park People",
+    image: parkppl
+  },
+  EVERGREEN: {
+    name: "Evergreen Brickworks",
+    image: evergreen
+  }
 } 
+export function getCollaboratorImageByName(name: string): string | undefined {
+  for (const key in collaborators) {
+    const collaborator = collaborators[key as keyof typeof collaborators];
+    if (collaborator.name === name && 'image' in collaborator) {
+      return collaborator.image;
+    }
+  }
+  return undefined; // or fallback image
+}
 const eventFormat = {
     pop : '1v1 Popping Battle'
 }
@@ -72,7 +127,7 @@ export const botb: Module.EventProps = {
     link: 'botb',
     event: MediaType.Normal,
     attendees: 100,
-    affiliates: [{name: collaborators.EQUITAS, fund: 1150}, {name: collaborators.REDBULL, fund: 1485}, {name: collaborators.DONATIONS, fund: 535}]
+    affiliates: [{name: collaborators.EQUITAS.name, fund: 1150}, {name: collaborators.REDBULL.name, fund: 1485}, {name: collaborators.DONATIONS.name, fund: 535}]
 }
 
 export const cotb: Module.EventProps = {
@@ -88,7 +143,7 @@ export const cotb: Module.EventProps = {
     link: 'cotb',
     event: MediaType.Normal,
     attendees: 100,
-    affiliates: [ {name: collaborators.CITIES880, fund: 570}, {name: collaborators.DONATIONS, fund: 1250}]
+    affiliates: [ {name: collaborators.CITIES880.name, fund: 570}, {name: collaborators.DONATIONS.name, fund: 1250}]
 }
 
 export const potb: Module.EventProps = {
@@ -104,7 +159,7 @@ export const potb: Module.EventProps = {
     link: 'cotb',
     event: MediaType.Normal,
     attendees: 100,
-    affiliates: [ {name: collaborators.CITIES880, fund: 1230}, {name: collaborators.OCC, fund: 800}, {name: collaborators.DONATIONS, fund: 338}]
+    affiliates: [ {name: collaborators.CITIES880.name, fund: 1230}, {name: collaborators.OCC.name, fund: 800}, {name: collaborators.DONATIONS.name, fund: 338}]
 }
 
 export const topopping: Module.EventProps = {
@@ -119,7 +174,7 @@ export const topopping: Module.EventProps = {
     link: 'topopping',
     event: MediaType.Series,
     attendees: 60,
-    affiliates: [ {name: collaborators.DONATIONS, fund: 300}]
+    affiliates: [ {name: collaborators.DONATIONS.name, fund: 300}]
 }
 
 export const dperth: Module.EventProps = {
@@ -133,7 +188,7 @@ export const dperth: Module.EventProps = {
     link: 'sessions',
     attendees: 15,
     event: MediaType.Program,
-    affiliates: [ {name: collaborators.DVPCH, fund: 1250}]
+    affiliates: [ {name: collaborators.DVPCH.name, fund: 1250}]
 }
 
 export const fff: Module.EventProps = {
@@ -146,7 +201,7 @@ export const fff: Module.EventProps = {
     facebook: '1534855293677206',
     event: MediaType.Festival,
     attendees: 100,
-    affiliates: [{name:collaborators.TORONTO, fund: 4000}]
+    affiliates: [{name:collaborators.TORONTO.name, fund: 4000}]
 }
 
 export const bickfordboogie: Module.EventProps = {
@@ -160,7 +215,7 @@ export const bickfordboogie: Module.EventProps = {
     facebook: '966716321244992',
     event: MediaType.Normal,
     attendees: 100,
-    affiliates: [{name: collaborators.PARKPEOPLE, fund: 750}, {name: collaborators.DONATIONS, fund: 250}]
+    affiliates: [{name: collaborators.PARKPEOPLE.name, fund: 750}, {name: collaborators.DONATIONS.name, fund: 250}]
 
 }
 
@@ -184,7 +239,7 @@ export const unityfall: Module.EventProps = {
     instagram: 'p/CxoIJkXPheY/',
     event: MediaType.Program,
     attendees: 20,
-    affiliates: [{name: collaborators.UNITY, fund: 1880}]
+    affiliates: [{name: collaborators.UNITY.name, fund: 1880}]
 }
 
 export const unitydavenport: Module.EventProps = {
@@ -196,7 +251,7 @@ export const unitydavenport: Module.EventProps = {
     instagram: 'p/C0FfzVmvqf1/',
     event: MediaType.Program,
     attendees: 20,
-    affiliates: [{name: collaborators.UNITY, fund: 1700}]
+    affiliates: [{name: collaborators.UNITY.name, fund: 1700}]
 }
 
 export const fiff: Module.EventProps = {
@@ -209,7 +264,7 @@ export const fiff: Module.EventProps = {
     facebook: '1504067116806534',
     event: MediaType.Normal,
     attendees: 100,
-    affiliates: [{name: collaborators.UNITY, fund: 3000}]
+    affiliates: [{name: collaborators.UNITY.name, fund: 3000}]
 }
 
 export const borderless: Module.EventProps = {
@@ -222,7 +277,7 @@ export const borderless: Module.EventProps = {
     facebook: '8055331731156456',
     event: MediaType.Normal,
     attendees: 100,
-    affiliates: [{name: collaborators.EVERGREEN, fund: 1000}, {name: collaborators.WAFF, fund: 10000}]
+    affiliates: [{name: collaborators.EVERGREEN.name, fund: 1000}, {name: collaborators.WAFF.name, fund: 10000}]
 }
 
 export const botsnboltsevent: Module.EventProps = {
@@ -234,7 +289,7 @@ export const botsnboltsevent: Module.EventProps = {
     instagram: 'p/C_9DNhrS69U/',
     event: MediaType.Normal,
     attendees: 100,
-    affiliates: [{name: collaborators.WAFF, fund: 2800}, {name: collaborators.DONATIONS, fund: 150}]
+    affiliates: [{name: collaborators.WAFF.name, fund: 2800}, {name: collaborators.DONATIONS.name, fund: 150}]
 }
 
 export const unity2024: Module.EventProps = {
@@ -246,7 +301,7 @@ export const unity2024: Module.EventProps = {
     instagram: 'p/DAtbqefSo_7/',
     event: MediaType.Program, 
     attendees: 20,
-    affiliates: [{name: collaborators.UNITY, fund: 1450}]
+    affiliates: [{name: collaborators.UNITY.name, fund: 1450}]
 
 }
 
@@ -259,7 +314,7 @@ export const unity2025: Module.EventProps = {
     instagram: 'p/DEyFuwcSskH/',
     event: MediaType.Program,
     attendees: 20,
-    affiliates: [{name: collaborators.UNITY, fund: 1260}]
+    affiliates: [{name: collaborators.UNITY.name, fund: 1260}]
 }
 
 export const belly: Module.EventProps = {
@@ -272,7 +327,7 @@ export const belly: Module.EventProps = {
     facebook: '7558081957593863',
     event: MediaType.Normal,
     attendees: 150,
-    affiliates: [{name:collaborators.TAC, fund: 10000}]
+    affiliates: [{name:collaborators.TAC.name, fund: 10000}]
 }
 
 export const borderlessboogie2: Module.EventProps = {
@@ -284,7 +339,7 @@ export const borderlessboogie2: Module.EventProps = {
     instagram: 'p/DDrsUnExBPe/',
     event: MediaType.Normal,
     attendees: 100,
-    affiliates: [{name: collaborators.WAFF, fund: 800}]
+    affiliates: [{name: collaborators.WAFF.name, fund: 800}]
 }
 
 export const jnj: Module.EventProps = {
@@ -296,7 +351,7 @@ export const jnj: Module.EventProps = {
     instagram: 'p/DKcA3gCtxO2/',
     event: MediaType.Normal,
     attendees: 100,
-    affiliates: [{name: collaborators.EQUITAS, fund: 750}, {name: collaborators.DONATIONS, fund: 900}]
+    affiliates: [{name: collaborators.EQUITAS.name, fund: 750}, {name: collaborators.DONATIONS.name, fund: 900}]
 }
 
 export const funkforyourfeet: Module.EventProps = {

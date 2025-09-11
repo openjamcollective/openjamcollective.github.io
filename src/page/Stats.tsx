@@ -1,14 +1,17 @@
 import React, { useState, useMemo } from 'react';
-import {eventlist} from '../lib/data/Events';
+import {eventlist, getCollaboratorImageByName, collaborators} from '../lib/data/Events';
 import { AffiliateProps } from '../lib/interfaces';
 import { MediaType } from '../lib/util';
 const Stats:React.FC =() =>{
+    
       const affiliateFunds = useMemo(() => {
         const map: Record<string, number> = {};
     
         eventlist.forEach((event) => {
           event.affiliates?.forEach((affiliate: AffiliateProps) => {
-            map[affiliate.name] = (map[affiliate.name] || 0) + affiliate.fund;
+            if(affiliate.name !== collaborators.DONATIONS.name){
+                map[affiliate.name] = (map[affiliate.name] || 0) + affiliate.fund;
+            }
           });
         });
     
@@ -42,19 +45,30 @@ const Stats:React.FC =() =>{
         </div>
         <h4><i>Collaborators</i></h4>
         
-        <div>
-            <ul>
-            {Object.entries(affiliateFunds)
+        <div className="grid-container">
+        {Object.entries(affiliateFunds)
             .sort(([, a], [, b]) => b - a)
             .map(([name, fund]) => (
-            <div key={name}>
-                {name}
+            <div key={name} className="img-wrapper">
+                {getCollaboratorImageByName(name) && (
+                <img src={getCollaboratorImageByName(name)} alt={name} className="img-small" />
+                )}
             </div>
             ))}
-            </ul>
-            {/* <p><b>Total Funds: {totalFunds}</b></p> */}
         </div>
       </header>
     )
 }
+        // <div>
+        //     <ul>
+        //     {Object.entries(affiliateFunds)
+        //     .sort(([, a], [, b]) => b - a)
+        //     .map(([name, fund]) => (
+        //     <div key={name}>
+        //         {getCollaboratorImageByName(name) && <img src={getCollaboratorImageByName(name)} className='img-small'></img>}
+        //     </div>
+        //     ))}
+        //     </ul>
+        //     {/* <p><b>Total Funds: {totalFunds}</b></p> */}
+        // </div>
 export default Stats;
