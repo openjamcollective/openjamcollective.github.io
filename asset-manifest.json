@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.84e8fe34.css",
-    "main.js": "/static/js/main.a0440c10.js",
+    "main.js": "/static/js/main.63f344e2.js",
     "static/js/787.0a7e686c.chunk.js": "/static/js/787.0a7e686c.chunk.js",
     "static/media/BickfordBoogie2.jpg": "/static/media/BickfordBoogie2.bf4ed4d2949b0647005d.jpg",
     "static/media/Keith2.jpg": "/static/media/Keith2.92e65c01a7bab4d90517.jpg",
@@ -43,11 +43,11 @@
     "static/media/880-logo-menu-green.png": "/static/media/880-logo-menu-green.c531204dc3e68f665b6b.png",
     "index.html": "/index.html",
     "main.84e8fe34.css.map": "/static/css/main.84e8fe34.css.map",
-    "main.a0440c10.js.map": "/static/js/main.a0440c10.js.map",
+    "main.63f344e2.js.map": "/static/js/main.63f344e2.js.map",
     "787.0a7e686c.chunk.js.map": "/static/js/787.0a7e686c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.84e8fe34.css",
-    "static/js/main.a0440c10.js"
+    "static/js/main.63f344e2.js"
   ]
 }
