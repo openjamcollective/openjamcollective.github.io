@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.127d0f67.css",
-    "main.js": "/static/js/main.8a946b5e.js",
+    "main.css": "/static/css/main.84e8fe34.css",
+    "main.js": "/static/js/main.a0440c10.js",
     "static/js/787.0a7e686c.chunk.js": "/static/js/787.0a7e686c.chunk.js",
     "static/media/BickfordBoogie2.jpg": "/static/media/BickfordBoogie2.bf4ed4d2949b0647005d.jpg",
     "static/media/Keith2.jpg": "/static/media/Keith2.92e65c01a7bab4d90517.jpg",
@@ -24,21 +24,30 @@
     "static/media/Luis.jpg": "/static/media/Luis.c7f82fafc1974708c3ee.jpg",
     "static/media/unity25.jpg": "/static/media/unity25.6eb861499e8ca4fcabde.jpg",
     "static/media/belly.jpg": "/static/media/belly.73e593c7245afaa93780.jpg",
+    "static/media/OCC.png": "/static/media/OCC.3ead88af493efcf7caf8.png",
     "static/media/bboogie2.jpg": "/static/media/bboogie2.287766816f7c10355e72.jpg",
     "static/media/Unity_Group.jpg": "/static/media/Unity_Group.c3b086ff1261d07cbe27.jpg",
     "static/media/BotsNBolts.jpeg": "/static/media/BotsNBolts.68964c65b3bca6ed20c4.jpeg",
     "static/media/topopping.jpeg": "/static/media/topopping.25edd911154510ee5561.jpeg",
     "static/media/dpnchc.jpg": "/static/media/dpnchc.e2209336ff66171ffc0d.jpg",
     "static/media/Unity_Davenport.jpg": "/static/media/Unity_Davenport.476e43d294b886139155.jpg",
+    "static/media/unity.png": "/static/media/unity.4446c998c93e2a7c45fd.png",
     "static/media/Unity_Program.jpg": "/static/media/Unity_Program.0ff9ac2568d9b6c7b719.jpg",
+    "static/media/family_logo.png": "/static/media/family_logo.568c16645e6c7334817b.png",
+    "static/media/Red-Bull-logo.png": "/static/media/Red-Bull-logo.66fff7f0ebfc21347604.png",
+    "static/media/equitas_logo.en_.png": "/static/media/equitas_logo.en_.854c665ee8d4bd5d0d21.png",
+    "static/media/Toronto,_City_of.svg.png": "/static/media/Toronto,_City_of.svg.cb87f52ba9109b347d50.png",
     "static/media/OJC_Full.png": "/static/media/OJC_Full.52e54a5e32273496c119.png",
+    "static/media/Park-People-stack-logo.png": "/static/media/Park-People-stack-logo.3b66fb5fe3a2bfb60b40.png",
+    "static/media/tornto-arts-council.png": "/static/media/tornto-arts-council.332a5ae747db6905df4f.png",
+    "static/media/880-logo-menu-green.png": "/static/media/880-logo-menu-green.c531204dc3e68f665b6b.png",
     "index.html": "/index.html",
-    "main.127d0f67.css.map": "/static/css/main.127d0f67.css.map",
-    "main.8a946b5e.js.map": "/static/js/main.8a946b5e.js.map",
+    "main.84e8fe34.css.map": "/static/css/main.84e8fe34.css.map",
+    "main.a0440c10.js.map": "/static/js/main.a0440c10.js.map",
     "787.0a7e686c.chunk.js.map": "/static/js/787.0a7e686c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.127d0f67.css",
-    "static/js/main.8a946b5e.js"
+    "static/css/main.84e8fe34.css",
+    "static/js/main.a0440c10.js"
   ]
 }
