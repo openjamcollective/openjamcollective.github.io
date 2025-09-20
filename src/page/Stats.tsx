@@ -43,32 +43,22 @@ const Stats:React.FC =() =>{
             <p># Events with over 100+ attendees: {totalEvents[0]}</p>
             <p># Weekly Programs: {totalEvents[1]}</p>
         </div>
-        <h4><i>Collaborators</i></h4>
+        <div className="collabs">
+          <h4><i>Collaborators</i></h4>
         
-        <div className="grid-container">
-        {Object.entries(affiliateFunds)
-            .sort(([, a], [, b]) => b - a)
-            .map(([name, fund]) => (
-            <div key={name} className="img-wrapper">
-                {getCollaboratorImageByName(name) && (
-                <img src={getCollaboratorImageByName(name)} alt={name} className="img-small" />
-                )}
-            </div>
-            ))}
+          <div className="grid-container">
+          {Object.entries(affiliateFunds)
+              .sort(([, a], [, b]) => b - a)
+              .map(([name, fund]) => (
+              <div key={name} className="img-wrapper">
+                  {getCollaboratorImageByName(name) && (
+                  <img src={getCollaboratorImageByName(name)} alt={name} className="img-small" />
+                  )}
+              </div>
+              ))}
+          </div>
         </div>
       </header>
     )
 }
-        // <div>
-        //     <ul>
-        //     {Object.entries(affiliateFunds)
-        //     .sort(([, a], [, b]) => b - a)
-        //     .map(([name, fund]) => (
-        //     <div key={name}>
-        //         {getCollaboratorImageByName(name) && <img src={getCollaboratorImageByName(name)} className='img-small'></img>}
-        //     </div>
-        //     ))}
-        //     </ul>
-        //     {/* <p><b>Total Funds: {totalFunds}</b></p> */}
-        // </div>
 export default Stats;
