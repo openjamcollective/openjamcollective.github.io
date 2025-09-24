@@ -6,7 +6,7 @@ import botb from '../lib/images/BOTB_Clean.jpg';
 import './Page.css';
 const Home:React.FC =() =>{
     return(
-        <header className="App-header image-container">
+        <header className="App-header">
             <div className="row"
                         style={{
                 width: '100%',
