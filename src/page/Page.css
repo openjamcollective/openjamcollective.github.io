@@ -142,3 +142,30 @@
   text-align: left;
   margin: 0;
 }
+
+.image-container {
+  position: relative; /* Needed so text can be positioned inside */
+  display: inline-block;
+}
+
+.image-container img{
+  width: 400px
+}
+
+.overlay-text {
+  position: absolute;
+  top: 90%;       /* halfway down */
+  left: 60%;      /* halfway across */
+  transform: translate(-50%, -50%); /* truly center */
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background: rgba(0,0,0,0.5); /* semi-transparent background */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.overlay-text p{
+  text-align: left;
+  margin: 0;
+}

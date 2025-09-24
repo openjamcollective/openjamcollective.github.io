@@ -1,7 +1,11 @@
 import React, { useState, useMemo } from 'react';
-import {eventlist, getCollaboratorImageByName, collaborators} from '../lib/data/Events';
+import {eventlist, getCollaboratorImageByName, collaborators, botb} from '../lib/data/Events';
 import { AffiliateProps } from '../lib/interfaces';
 import { MediaType } from '../lib/util';
+import borderless6 from "../lib/images/borderless6.jpg";
+import borderless7 from "../lib/images/borderless7.jpg";
+import botb3 from "../lib/images/botb3.jpg";
+
 const Stats:React.FC =() =>{
     
       const affiliateFunds = useMemo(() => {
@@ -38,10 +42,16 @@ const Stats:React.FC =() =>{
       }, [affiliateFunds]);
     return(
         <header className="App-header">
-        <div>
+        
+        <div className='image-container'>  
+          <img src={borderless6}/>
+          <img src={borderless7}/>
+          <img src={botb3}/>
+          <div className="overlay-text">
             <p>All events and programs OJC has done has been free to create accessibility within the city</p>
             <p># Events with over 100+ attendees: {totalEvents[0]}</p>
             <p># Weekly Programs: {totalEvents[1]}</p>
+          </div>
         </div>
         <div className="collabs">
           <h4><i>Collaborators</i></h4>
@@ -58,6 +68,7 @@ const Stats:React.FC =() =>{
               ))}
           </div>
         </div>
+
       </header>
     )
 }
