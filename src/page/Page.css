@@ -45,7 +45,8 @@
 .contact-image{
     width: 70%;
     /* width: -webkit-fill-available; */
-    max-height: 500px;
+    /* max-height: 500px; */
+    max-height: 700px;
     object-position: 50% top;
     object-fit: cover;
     
@@ -135,4 +136,9 @@
   color:black;
   width: 100%;        /* stretch full width */
   padding: 2rem 0;    /* add vertical spacing */
+}
+
+.session p{
+  text-align: left;
+  margin: 0;
 }

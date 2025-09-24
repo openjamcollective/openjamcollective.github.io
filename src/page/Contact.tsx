@@ -6,6 +6,9 @@ import discord_logo from '../lib/images/icons8-discord-100.png';
 const Contact:React.FC =() =>{
     return(
         <header className="App-header">
+            <h4>
+            <i>Contact us</i>
+        </h4>
             {contactInfo()}
             <img className="contact-image" src={botb}/>  
         </header> 
@@ -13,10 +16,8 @@ const Contact:React.FC =() =>{
 }
 
 const contactInfo = () => {
-    return <div>
-        <h4 className='no-margins'>
-            <i>Contact us</i>
-        </h4>
+    return <div className="container pagedisplay content-sec">
+        
         <div className='logo-info'>
             <a>
                 <img className="logo-image" src={email}/>
@@ -29,7 +30,12 @@ const contactInfo = () => {
             </a>
             <p>@openjamcollective</p>
         </div>
-        
+        <div className='session down-bad'>
+            <p>How to get involved in the popping scene:</p>
+            <p>There are weekly dance sessions at Christie Pits</p>
+            <p>Wednesdays and Fridays 7-9pm</p>
+            <p>Follow our ig as we post stories day of for sessions</p>
+        </div>
     </div>
 }
 export default Contact;
