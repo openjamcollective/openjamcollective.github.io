@@ -4,6 +4,7 @@ import OrganizationCard from '../components/about/OrganizationCard';
 import logo from '../lib/images/OJC_Full.png';
 import botb from '../lib/images/BOTB_Clean.jpg';
 import './Page.css';
+import Instagram from '../components/instagram/Instagram';
 const Home:React.FC =() =>{
     return(
         <header className="App-header">
@@ -16,6 +17,9 @@ const Home:React.FC =() =>{
                 backgroundPosition: 'center',
             }}>
                 <p className="quote"><i>"For the community, by the community." - Luis Miguel</i></p>
+            </div>
+            <div className="row">
+                <Instagram/>
             </div>
         </header>
     )
