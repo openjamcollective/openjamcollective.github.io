@@ -130,6 +130,13 @@
   width: 50%;
   justify-self: center;
 }
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; /* adjust spacing as needed */
+  width: 50%;
+  justify-self: center;
+}
 
 .collabs{
   background-color: white;
@@ -168,4 +175,13 @@
 .overlay-text p{
   text-align: left;
   margin: 0;
+}
+
+.orgImage{
+  width: 500px;
+}
+
+.youtube{
+  width: 500px;
+  height: 400px;
 }
