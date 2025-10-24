@@ -18,9 +18,9 @@ const Home:React.FC =() =>{
             }}>
                 <p className="quote"><i>"For the community, by the community." - Luis Miguel</i></p>
             </div>
-            <div className="row">
+            {/* <div className="row">
                 <Instagram/>
-            </div>
+            </div> */}
         </header>
     )
 }
