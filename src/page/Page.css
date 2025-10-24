@@ -166,16 +166,18 @@
   width: 500px;
   height: 400px;
 }
-
+.pagedisplay{
+  padding-top: 2em;
+}
 @media screen and (max-width: 768px) {
-    .App-header{
-        padding-top: 15vh;
-    }
   .grid-container2 {
     grid-template-columns: repeat(1, 1fr);
   }
   .grid-container{
     grid-template-columns: repeat(2, 1fr);
+  }
+  .pagedisplay{
+    padding-top: 0;
   }
 }
 
@@ -184,4 +186,7 @@
   height: 100vh;
   background-size: cover;
   background-position: center;
+}
+.about{
+  padding-right: 20%;
 }

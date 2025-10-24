@@ -25,8 +25,8 @@ function App() {
       <BrowserRouter>
         <NaviBar/>
         <Routes>
-          <Route path="/about/ojc" element={<Organization/>} />
-          <Route path="/about/members" element={<About/>} />
+          <Route path="/team" element={<About/>} />
+          <Route path="/about" element={<Organization/>} />
           <Route path="/about/history" element={<History/>} />
           <Route path="/events/stats" element={<Stats/>} />
           <Route path="/events" element={<Events/>} />

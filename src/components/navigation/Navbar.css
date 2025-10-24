@@ -1,77 +1,126 @@
-.nav-ul-sub{
-    padding: 0;
-    position: fixed; 
-    z-index: 1; 
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0.5em 1em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.nav-ul-sub li{
-    list-style: none;
-    text-align: left;
-    padding-left: 25px;
-    padding-top: 5px;
-    /* width: 200px; */
-    background-color: white;
-} 
-
-.nav-list{
-    display: inline-flex;
-    justify-content: center;
-    padding-top: 5%;
+body {
+  padding-top: var(--nav-height, 7em);
 }
 
-.nav-image{
-    width: 150px;
-    /* padding-left: 25%;
-    padding-top: 2%;
-    padding-bottom: 2%; */
-}
-.nav-logo{
-    /* padding-left: 25%; */
-    padding-top: 2%;
-    padding-bottom: 2%;
+.nav-logo {
+  display: flex;
+  align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-    .nav-list {
-      flex-direction: column;
-    }
-    .nav-image{
-        padding: 2%;    
-    }
-    .nav-bar{
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1;
-        background-color: white;
-    }
+.nav-image {
+  width: 150px;
 }
 
-.nav-bar{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+/* Desktop nav */
+.nav-list {
+  display: inline-flex;
+  justify-content: center;
+  padding-top: 5%;
+list-style: none; /* ✅ remove bullet points */
+  margin: 0;        /* optional: remove default spacing */
+  padding-left: 0;  /* optional: remove default indentation */
+}
+
+.nav-li {
+  list-style: none; /* ✅ just to be safe on each item */
+  margin: 0 1em;    /* optional: add spacing between links */
+}
+.nav-li a {
+  text-decoration: none;       /* remove underline */
+  color: black;                /* default color */
+  font-weight: normal;
+  transition: all 0.2s ease;
+}
+
+/* Hover and focus (when clicked or tabbed) */
+.nav-li a:hover,
+.nav-li a:focus {
+  text-decoration: underline;  /* underline only on hover/click */
+  color: black;
+  font-weight: 500;            /* slightly bolder */
+}
+
+/* Active link (for current page) */
+.nav-li a.active {
+  text-decoration: underline;
+  font-weight: bold;
+  color: black;
+}
+/* Hamburger icon */
+.menu-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Full-width dropdown below navbar */
+.mobile-menu-full {
+  position: fixed;
+  top: 7em; /* just below navbar height */
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 9;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: dropdownSlide 0.3s ease;
+}
+
+@keyframes dropdownSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-menu-full .nav-list {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1em;
+}
+
+.mobile-menu-full .nav-li {
+  padding: 10px 0;
+  list-style: none;
+}
+
+.mobile-menu-full .nav-li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Desktop layout */
+@media screen and (min-width: 769px) {
+  .mobile-menu-full {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
 }
 
 .nav-par{
-    display: flex;
+    padding-right: 2em;
 }
-.menu-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.menu-container{
+    padding-right: 3em;
 }
-
-.nav-li{
-    list-style: none;
-    min-width: 50%;
-}
-
-.nav-li:hover {
-    font-weight: bolder;
-}
-
-.nav-li a{
-    text-decoration: none;
-    color: black;
-}
-

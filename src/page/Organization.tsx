@@ -8,8 +8,7 @@ const Organization: React.FC = () => {
     const mediaArr: string[] = [bb4, "https://www.youtube.com/watch?v=Xmbe9Y5cNpE",potb];
   return (
     <header className="App-header">
-    <h4><i>About</i></h4>
-      <div className="container pagedisplay">
+      <div className="container pagedisplay about">
         <div className='grid-container2'>
         {orgInfoList.map((info, i) => {
           const media = mediaArr[i];
