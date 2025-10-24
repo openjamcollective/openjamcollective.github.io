@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.68a1d45a.css",
-    "main.js": "/static/js/main.f0d6068a.js",
+    "main.css": "/static/css/main.42a153c7.css",
+    "main.js": "/static/js/main.7b443e82.js",
     "static/js/787.0a7e686c.chunk.js": "/static/js/787.0a7e686c.chunk.js",
     "static/media/BickfordBoogie2.jpg": "/static/media/BickfordBoogie2.bf4ed4d2949b0647005d.jpg",
     "static/media/Keith2.jpg": "/static/media/Keith2.92e65c01a7bab4d90517.jpg",
+    "static/media/potb2.jpg": "/static/media/potb2.9714078cd4943b77d8bd.jpg",
     "static/media/AJ.jpg": "/static/media/AJ.18fd03b44674651e53a8.jpg",
     "static/media/Diana.jpg": "/static/media/Diana.6ec7e9bc10357b9127de.jpg",
     "static/media/JamNJuicePoster_version5.png": "/static/media/JamNJuicePoster_version5.1d48f6378c4e9b1c2ff0.png",
@@ -12,6 +13,7 @@
     "static/media/potb.jpg": "/static/media/potb.a391af2963ae4fe9c4ad.jpg",
     "static/media/COTB.png": "/static/media/COTB.274fae087017261f70f1.png",
     "static/media/BOTB_Clean.jpg": "/static/media/BOTB_Clean.7d8692ba5322b5b360e4.jpg",
+    "static/media/bickfordboogie4.jpg": "/static/media/bickfordboogie4.6e7cf225af51cd5ad1aa.jpg",
     "static/media/BOTB_Jam.jpg": "/static/media/BOTB_Jam.e2b644a8257866762faf.jpg",
     "static/media/BOTBPoster.png": "/static/media/BOTBPoster.d75be9bac474806b211b.png",
     "static/media/botb3.jpg": "/static/media/botb3.539099bef4033bdde9c4.jpg",
@@ -45,12 +47,12 @@
     "static/media/tornto-arts-council.png": "/static/media/tornto-arts-council.332a5ae747db6905df4f.png",
     "static/media/880-logo-menu-green.png": "/static/media/880-logo-menu-green.c531204dc3e68f665b6b.png",
     "index.html": "/index.html",
-    "main.68a1d45a.css.map": "/static/css/main.68a1d45a.css.map",
-    "main.f0d6068a.js.map": "/static/js/main.f0d6068a.js.map",
+    "main.42a153c7.css.map": "/static/css/main.42a153c7.css.map",
+    "main.7b443e82.js.map": "/static/js/main.7b443e82.js.map",
     "787.0a7e686c.chunk.js.map": "/static/js/787.0a7e686c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.68a1d45a.css",
-    "static/js/main.f0d6068a.js"
+    "static/css/main.42a153c7.css",
+    "static/js/main.7b443e82.js"
   ]
 }
