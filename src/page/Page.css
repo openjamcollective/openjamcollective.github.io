@@ -14,9 +14,7 @@
     width: -webkit-fill-available;
     max-width: 75%;
 }
-.image-container {
-    position: relative;
-  }
+
 
   .ig-logo{
     transform: scale(1.1);
@@ -134,26 +132,13 @@
   justify-self: center;
 }
 
-.collabs{
-  background-color: white;
-  color:black;
-  width: 100%;        /* stretch full width */
-  padding: 2rem 0;    /* add vertical spacing */
-}
 
 .session p{
   text-align: left;
   margin: 0;
 }
 
-.image-container {
-  position: relative; /* Needed so text can be positioned inside */
-  display: inline-block;
-}
 
-.image-container img{
-  width: 400px
-}
 
 .overlay-text {
   position: absolute;
@@ -192,4 +177,11 @@
   .grid-container{
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.home-section {
+  width: 85%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }

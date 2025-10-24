@@ -37,7 +37,9 @@ const NaviBar: React.FC = () => {
             <Link to="/">Home</Link>
           </li>
           <Dropdown title={'About'} links={new Map<string, string>([["/about/ojc", "Organization"], ["/about/members", "Team"]])} />
-          <Dropdown title={'Events'} links={new Map<string, string>([["/events", smallScreen ? "Events" : "List"], ["/events/stats", "Stats"]])} />
+          <li className='nav-li'>
+            <Link to="/events">Events</Link>
+          </li>
           <li className='nav-li'>
             <Link to="/contact">Contact</Link>
           </li>
@@ -49,7 +51,10 @@ const NaviBar: React.FC = () => {
 
   return (
     <div className="nav-bar">
-      <img className="nav-image" src={ojc}/>
+      <Link to="/" className='nav-logo'>
+        <img className="nav-image" src={ojc} alt="OJC Logo" />
+      </Link>
+      {/* <img className="nav-image" src={ojc}/> */}
           { !smallScreen || navbarOpen ? basicNav() : 
           <div className="menu-icon">
             <img onClick={() => handleClick()}  src={menuIcon}/>

@@ -21,7 +21,12 @@
 
 .nav-image{
     width: 150px;
-    padding-left: 25%;
+    /* padding-left: 25%;
+    padding-top: 2%;
+    padding-bottom: 2%; */
+}
+.nav-logo{
+    /* padding-left: 25%; */
     padding-top: 2%;
     padding-bottom: 2%;
 }

@@ -11,7 +11,6 @@ const Organization: React.FC = () => {
     <h4><i>About</i></h4>
       <div className="container pagedisplay">
         <div className='grid-container2'>
-        {/* <div className="container pagedisplay content-sec grid grid-cols-1 md:grid-cols-2 gap-8 p-6"> */}
         {orgInfoList.map((info, i) => {
           const media = mediaArr[i];
           const isYouTube = media?.includes('youtube.com') || media?.includes('youtu.be');
@@ -71,18 +70,3 @@ function extractYouTubeId(url: string): string {
   const match = url.match(regex);
   return match ? match[1] : '';
 }
-
-// const Organization:React.FC =() =>{
-//     return(
-//         <header className="App-header">
-//         <div className="container pagedisplay content-sec">
-//             {orgInfoList.map(info=>
-//                     <div>
-//                         <OrganizationCard obj={info}/>
-//                     </div>
-//                 )}
-//         </div>
-//       </header>
-//     )
-// }
-// export default Organization;
