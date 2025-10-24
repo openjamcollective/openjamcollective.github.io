@@ -5,6 +5,12 @@
   max-width: 800px;
   margin: 0 auto;
 }
+/* 2 columns on small screens (e.g. under 600px) */
+@media screen and (max-width: 768px) {
+  .instagram-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .instagram-item {
   overflow: hidden;
