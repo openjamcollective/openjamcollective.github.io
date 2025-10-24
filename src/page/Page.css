@@ -130,7 +130,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem; /* adjust spacing as needed */
-  width: 50%;
+  width: 70%;
   justify-self: center;
 }
 
