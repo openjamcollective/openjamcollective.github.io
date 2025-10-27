@@ -187,7 +187,7 @@
   height: 80vh;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   /* background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed; 
@@ -218,9 +218,9 @@
     left: 1em;
     width: 70%;
   }
-  .home-section{
+  /* .home-section{
     width: 400px;
-  }
+  } */
 }
 
 
