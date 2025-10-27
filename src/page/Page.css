@@ -181,6 +181,20 @@
 .pagedisplay{
   padding-top: 2em;
 }
+
+.home-section {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  position: relative;
+  z-index: 0; */
+}
+
 @media screen and (max-width: 768px) {
   .grid-container2 {
     grid-template-columns: repeat(1, 1fr);
@@ -203,21 +217,13 @@
   .quote {
     left: 1em;
     width: 70%;
-}
+  }
+  .home-section{
+    width: 400px;
+  }
 }
 
-.home-section {
-  width: 100%;
-  height: 80vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  /* background-position: center top;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  position: relative;
-  z-index: 0; */
-}
+
 .about{
   padding-right: 20%;
 }
