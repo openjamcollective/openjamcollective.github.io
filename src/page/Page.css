@@ -87,6 +87,12 @@
   padding: 10px 20px;
   border-radius: 8px;      /* rounded corners */
   display: inline-block;   /* shrink wrap to text */
+
+  position: absolute;
+  top: 80%;  
+  left: 10em;
+  text-align: center;
+  width: 50%;
 }
 
 .stats-grid {
@@ -189,19 +195,52 @@
     height: 100%;
   }
   .overlay-text {
-  width: 250px;
-  top: 94%;       /* halfway down */
-  left: 50%;      /* halfway across */
-  font-size: 15px;
+    width: 250px;
+    top: 94%;       /* halfway down */
+    left: 50%;      /* halfway across */
+    font-size: 15px;
+  }
+  .quote {
+    left: 1em;
+    width: 70%;
 }
 }
 
 .home-section {
-  width: 85%;
-  height: 100vh;
+  width: 100%;
+  height: 70vh;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  position: relative;
+  z-index: 0;
 }
 .about{
   padding-right: 20%;
 }
+
+.parallax {
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment:scroll; 
+  position: relative;
+  z-index: 0;
+  /* padding-bottom: 50px; */
+}
+
+.contact-img {
+  height: 100vh;
+  /* background-color: white; */
+  padding: 50px;
+}
+
+/* 
+.content-sec {
+  background-color: white;
+  padding: 50px;
+  min-height: 100vh;
+} */

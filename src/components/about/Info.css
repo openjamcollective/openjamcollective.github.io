@@ -99,8 +99,8 @@
   background-color: white;
   color:black;
   padding-top: 2em;
-    position: relative;        /* For overlay positioning */
-  width: 85%;                /* Match hero-section width */
+  position: relative;        /* For overlay positioning */
+  width: 100%;                /* Match hero-section width */
   margin: 0 auto;            /* Center it horizontally */
   display: flex;             /* Arrange images in a row */
   justify-content: center;   /* Optional: center them */
