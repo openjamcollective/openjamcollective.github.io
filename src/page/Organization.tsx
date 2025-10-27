@@ -8,8 +8,8 @@ const Organization: React.FC = () => {
     const mediaArr: string[] = [bb4, "https://www.youtube.com/watch?v=Xmbe9Y5cNpE",potb];
   return (
     <header className="App-header">
-      <div className="container pagedisplay about">
-        <div className='grid-container2'>
+      <div className="container pagedisplay content-sec">
+        <div className="row">
         {orgInfoList.map((info, i) => {
           const media = mediaArr[i];
           const isYouTube = media?.includes('youtube.com') || media?.includes('youtu.be');
@@ -18,11 +18,11 @@ const Organization: React.FC = () => {
           const isEven = i % 2 === 0;
 
           const mediaElement = isYouTube ? (
-            <div className="w-full aspect-video">
+            <div>
               <iframe
                 src={`https://www.youtube.com/embed/${extractYouTubeId(media)}`}
                 title={`YouTube video ${i}`}
-                className="youtube w-full h-full rounded-2xl shadow-lg"
+                className="orgVid w-full h-full rounded-2xl shadow-lg"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -39,6 +39,7 @@ const Organization: React.FC = () => {
           const cardElement = <OrganizationCard obj={info} />;
 
           return (
+            <div className="grid-container2">
             <React.Fragment key={i}>
               {isEven ? (
                 <>
@@ -52,6 +53,7 @@ const Organization: React.FC = () => {
                 </>
               )}
             </React.Fragment>
+            </div>
           );
         })}
         </div>
