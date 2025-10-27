@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {objectives, orgInfoList} from '../lib/data/Info';
 import OrganizationCard from '../components/about/OrganizationCard';
 import bb4 from "../lib/images/bickfordboogie4.jpg"
-import potb from "../lib/images/potb2.jpg";
+import potb from "../lib/images/potb4.jpg";
 
 const Organization: React.FC = () => {
     const mediaArr: string[] = [bb4, "https://www.youtube.com/watch?v=Xmbe9Y5cNpE",potb];

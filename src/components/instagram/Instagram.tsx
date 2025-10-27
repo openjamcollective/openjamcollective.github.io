@@ -3,7 +3,7 @@ import "./instagram.css"; // ✅ import the CSS file
 import postsDataRaw from "../../lib/data/instagram.json";
 
 
-const postsData: InstagramPost[] = postsDataRaw as InstagramPost[];
+const postsData: InstagramPost[] = (postsDataRaw as InstagramPost[]).filter(post => post.media_type !== "VIDEO");
 interface InstagramPost {
   id: string;
   caption?: string;
