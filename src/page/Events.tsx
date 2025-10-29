@@ -4,49 +4,42 @@ import EventCard from '../components/events/EventCard';
 import { AffiliateProps } from '../lib/interfaces';
 import Instagram from '../components/instagram/Instagram';
 const Events: React.FC = () => {
+      const pageSize = 3; // Number of EventCards per page
+    const [currentPage, setCurrentPage] = useState(1);
+  
+    const totalPages = Math.ceil(eventlist.length / pageSize);
+  
+    const handleNextPage = () => {
+      setCurrentPage((prevPage: number) => Math.min(prevPage + 1, totalPages));
+    };
+  
+    const handlePrevPage = () => {
+      setCurrentPage((prevPage: number) => Math.max(prevPage - 1, 1));
+    };
+  
+      // 👇 Create a map of affiliateName -> totalFunds
+  const affiliateFunds = useMemo(() => {
+    const map: Record<string, number> = {};
+
+    eventlist.forEach((event) => {
+      event.affiliates?.forEach((affiliate: AffiliateProps) => {
+        map[affiliate.name] = (map[affiliate.name] || 0) + affiliate.fund;
+      });
+    });
+
+    return map;
+  }, [eventlist]);
+
+  // 👇 Calculate grand total
+  const totalFunds = useMemo(() => {
+    return Object.values(affiliateFunds).reduce((sum, val) => sum + val, 0);
+  }, [affiliateFunds]);
+    const startIndex = (currentPage - 1) * pageSize;
+    const endIndex = startIndex + pageSize;
+
     return (
       <header className="App-header">
-          <div className="row">
-                <Instagram/>
-            </div>
-      </header>
-    );
-  };
-
-export default Events;
-  //   const pageSize = 3; // Number of EventCards per page
-  //   const [currentPage, setCurrentPage] = useState(1);
-  
-  //   const totalPages = Math.ceil(eventlist.length / pageSize);
-  
-  //   const handleNextPage = () => {
-  //     setCurrentPage((prevPage: number) => Math.min(prevPage + 1, totalPages));
-  //   };
-  
-  //   const handlePrevPage = () => {
-  //     setCurrentPage((prevPage: number) => Math.max(prevPage - 1, 1));
-  //   };
-  
-  //     // 👇 Create a map of affiliateName -> totalFunds
-  // const affiliateFunds = useMemo(() => {
-  //   const map: Record<string, number> = {};
-
-  //   eventlist.forEach((event) => {
-  //     event.affiliates?.forEach((affiliate: AffiliateProps) => {
-  //       map[affiliate.name] = (map[affiliate.name] || 0) + affiliate.fund;
-  //     });
-  //   });
-
-  //   return map;
-  // }, [eventlist]);
-
-  // // 👇 Calculate grand total
-  // const totalFunds = useMemo(() => {
-  //   return Object.values(affiliateFunds).reduce((sum, val) => sum + val, 0);
-  // }, [affiliateFunds]);
-  //   const startIndex = (currentPage - 1) * pageSize;
-  //   const endIndex = startIndex + pageSize;
-        {/* <h4>
+                <h4>
           <i>Events</i>
         </h4>
         <div className="container pagedisplay content-sec">
@@ -73,4 +66,12 @@ export default Events;
               Next
             </button>
           </div>
-        </div> */}
+        </div>
+          {/* <div className="row">
+                <Instagram/>
+            </div> */}
+      </header>
+    );
+  };
+
+export default Events;
