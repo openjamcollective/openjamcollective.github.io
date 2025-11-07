@@ -15,7 +15,7 @@ export const diana: Module.PersonProps = {
 
 export const luis: Module.PersonProps = {
     name: 'Luis Miguel',
-    about: 'Luis "Cheech" Miguel is a seasoned Popper/Tutter/choreographer and Street Performer. Hailing from Puebla Mexico, but residing in Toronto Ontario, he has been an active member of the street dance community for over a decade, representing either Funkyverse Crew, D.O.T, and Soul Junkiez Crew. Cheech mixes traditional technique with crazy concepts and high performance energy, resulting in winning over 20 battles and the national championship at HHI in 2024! ',
+    about: 'Luis "Cheech" Miguel is a seasoned Popper/Tutter/choreographer and Street Performer. Hailing from Puebla Mexico, but residing in Toronto Ontario, he has been an active member of the street dance community for over a decade, representing Funkyverse Crew, Damage over time, and Soul Junkiez Crew. Cheech mixes traditional technique with crazy concepts and high performance energy, resulting in over 20 battle wins, a national championship at HHI in 2024 and 2 Golden Buzzers on CGT season 4.',
     social: 'cheech1teach1/',
     media: LUIS_PHOTO
 }

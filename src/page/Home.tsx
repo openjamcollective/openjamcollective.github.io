@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import botb from '../lib/images/BOTB_Clean.jpg';
 import Collaborators from '../components/about/Collaborators';
 import './Page.css';
+import Footer from '../components/footer/Footer';
 const Home:React.FC =() =>{
           useEffect(() => {
         const handleScroll = () => {
@@ -25,6 +26,7 @@ const Home:React.FC =() =>{
             <div className="row">
                 <Collaborators/>
             </div>
+                
         </header>
     )
 }

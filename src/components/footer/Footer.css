@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: space-between;   /* h4 left, content right */
+  align-items: center;
+  padding: 16px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;           /* stack the two lines */
+}
+
+.footer-ig-logo{
+    width: 20px;
+}
+
+.footer-ojc-logo{
+    width: 70px;
+}

@@ -18,6 +18,7 @@ import Stats from './page/Stats';
 import {eventlist} from './lib/data/Events';
 import EventCard from './components/events/EventPanel';
 import EventPanel from './components/events/EventPanel';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           )}
           <Route path="/" element={<Home/>}/>
     </Routes>
+    <Footer/>
   </BrowserRouter>
     </div>
   );

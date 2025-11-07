@@ -38,20 +38,14 @@ function extractYouTubeId(url: string): string {
 const aboutInfo = () => {
   return (
       <div className="container pagedisplay">
-          <OrganizationCard obj={orgInfoList[0]} />
-          <div className="row org-img"
+        <OrganizationCard obj={orgInfoList[2]} />
+        <div className="row org-img"
                   style={{
                   backgroundImage: `url(${bb4})`,
                   }}>
           </div>
-          <OrganizationCard obj={orgInfoList[1]} />
-          <div className="row org-img"
-                  style={{
-                  backgroundImage: `url(${potb})`,
-                  }}>
-          </div>
           <div className="grid-container2 padVertical">
-            <OrganizationCard obj={orgInfoList[2]} />
+          <OrganizationCard obj={orgInfoList[0]} />  
               <iframe
                 src={`https://www.youtube.com/embed/${extractYouTubeId("https://www.youtube.com/watch?v=Xmbe9Y5cNpE")}`}
                 title={`Open Jam Intro`}
@@ -61,6 +55,14 @@ const aboutInfo = () => {
                 allowFullScreen
               ></iframe>
           </div>
+          
+          <OrganizationCard obj={orgInfoList[1]} />
+          <div className="row org-img"
+                  style={{
+                  backgroundImage: `url(${potb})`,
+                  }}>
+          </div>
+          
         </div>
   )
 }

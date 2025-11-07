@@ -42,7 +42,7 @@ const Collaborators:React.FC =() =>{
       }, [affiliateFunds]);
     return(
         <div>
-            <h4><i>Collaborators</i></h4>
+            <h4><i>Partners</i></h4>
             <div className="collabs">
                 <div className="grid-container">
                 {Object.entries(affiliateFunds)
@@ -60,11 +60,11 @@ const Collaborators:React.FC =() =>{
                 <img src={borderless6}/>
                 <img src={borderless7}/>
                 <img src={botb3}/>
-                <div className="overlay-text">
+                {/* <div className="overlay-text">
                     <p>All events and programs OJC has done has been free to create accessibility within the city</p>
                     <p># Events with over 100+ attendees: {totalEvents[0]}</p>
                     <p># Weekly Programs: {totalEvents[1]}</p>
-                </div>
+                </div> */}
             </div>
       </div>
     )

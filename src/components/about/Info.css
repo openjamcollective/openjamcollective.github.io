@@ -139,7 +139,7 @@
     justify-content: flex-start; /* or space-between / unset */
   }
   .collabs .grid-container{
-    padding-left: 1em;
+    padding-left: 15%;
   }
   .img-small {
     max-width: 120px;

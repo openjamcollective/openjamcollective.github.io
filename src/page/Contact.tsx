@@ -50,10 +50,7 @@ const contactInfo = () => {
             <p>@openjamcollective</p>
         </div>
         <div className='session down-bad'>
-            <p>How to get involved in the popping scene:</p>
-            <p>There are weekly dance sessions at Christie Pits</p>
-            <p>Wednesdays and Fridays 7-9pm</p>
-            <p>Follow our ig as we post stories day of for sessions</p>
+            <p>Message us to join our Facebook or Instagram group chat and learn about weekly popping sessions across the city!</p>
         </div>
     </div>
 }
