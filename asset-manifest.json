@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bcc7dd5b.css",
-    "main.js": "/static/js/main.94530d6c.js",
+    "main.css": "/static/css/main.e716c710.css",
+    "main.js": "/static/js/main.27bc2f65.js",
     "static/js/787.0a7e686c.chunk.js": "/static/js/787.0a7e686c.chunk.js",
     "static/media/BickfordBoogie2.jpg": "/static/media/BickfordBoogie2.bf4ed4d2949b0647005d.jpg",
     "static/media/Keith2.jpg": "/static/media/Keith2.92e65c01a7bab4d90517.jpg",
@@ -50,12 +50,12 @@
     "static/media/880-logo-menu-green.png": "/static/media/880-logo-menu-green.c531204dc3e68f665b6b.png",
     "static/media/email.png": "/static/media/email.a3cff553cfa355a6f82c.png",
     "index.html": "/index.html",
-    "main.bcc7dd5b.css.map": "/static/css/main.bcc7dd5b.css.map",
-    "main.94530d6c.js.map": "/static/js/main.94530d6c.js.map",
+    "main.e716c710.css.map": "/static/css/main.e716c710.css.map",
+    "main.27bc2f65.js.map": "/static/js/main.27bc2f65.js.map",
     "787.0a7e686c.chunk.js.map": "/static/js/787.0a7e686c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcc7dd5b.css",
-    "static/js/main.94530d6c.js"
+    "static/css/main.e716c710.css",
+    "static/js/main.27bc2f65.js"
   ]
 }
