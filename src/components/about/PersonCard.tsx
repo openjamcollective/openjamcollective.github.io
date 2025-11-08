@@ -7,17 +7,18 @@ import * as UtilConst from '../../lib/util';
 const PersonCard:React.FC<{ obj: PersonProps }> = (props) => {
     return (
         <div className="info-people person">
-            <div className="info-div">
-                <div className="text-white">
+            {props.obj.media &&
+            <div className="grid-child-media">
+                <div className="text-white person-name">
                     <h4>{props.obj.name}</h4>
                 </div>
+                <img className={props.obj.photo_style} src={props.obj.media}/>
+            </div>}
+            <div className="info-div">
                 <p>{props.obj.about}</p>
                 {contact(props.obj)}   
             </div>
-            {props.obj.media &&
-            <div className="grid-child-media">
-                <img className={props.obj.photo_style} src={props.obj.media}/>
-            </div>}
+            
         </div>
   );
 }

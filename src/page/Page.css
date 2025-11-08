@@ -218,12 +218,20 @@
   /* font-family: 'Courier New', Courier, monospace; */
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.grid-container-people{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
 @media (max-width: 768px) {
   .grid-container2 {
     grid-template-columns: repeat(1, 1fr);
   }
   .grid-container{
     grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-container-people{
+    grid-template-columns: repeat(1,1fr);
   }
   .pagedisplay{
     padding-top: 0;

@@ -6,14 +6,14 @@ const About:React.FC =() =>{
     return(
         <header className="App-header">
         <h4><i>Organizers / Co-Founders</i></h4>
-        <div className="container pagedisplay content-sec">
-            <div className="row">
+        <div className="container grid-container-people">
+            {/* <div className="row"> */}
                     {peoplelist.map(person=>
-                    <div className="col-md-4">
+                    <div className="col-md-6">
                         <PersonCard obj={person}/>
                     </div>
                 )}
-            </div>
+            {/* </div> */}
         </div>
       </header>
     )
