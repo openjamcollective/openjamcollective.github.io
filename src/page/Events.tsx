@@ -39,7 +39,7 @@ const Events: React.FC = () => {
 
     return (
       <header className="App-header">
-                <h4>
+                {/* <h4>
           <i>Events</i>
         </h4>
         <div className="container pagedisplay content-sec">
@@ -66,10 +66,10 @@ const Events: React.FC = () => {
               Next
             </button>
           </div>
-        </div>
-          {/* <div className="row">
+        </div> */}
+          <div className="row">
                 <Instagram/>
-            </div> */}
+            </div>
       </header>
     );
   };

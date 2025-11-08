@@ -37,7 +37,7 @@ function extractYouTubeId(url: string): string {
 
 const aboutInfo = () => {
   return (
-      <div className="container pagedisplay">
+      <div className="container pagedisplay org-font">
         <OrganizationCard obj={orgInfoList[2]} />
         <div className="row org-img"
                   style={{

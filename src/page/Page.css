@@ -213,7 +213,11 @@
   position: relative;
   z-index: 0; */
 }
-
+.org-font{
+  /* font-style: normal; */
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 @media (max-width: 768px) {
   .grid-container2 {
     grid-template-columns: repeat(1, 1fr);

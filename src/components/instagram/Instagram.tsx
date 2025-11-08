@@ -39,7 +39,7 @@ const Instagram:React.FC =() =>{
 
   return (
     <div>
-      <h2 style={{ textAlign: "center" }}>Follow us on Instagram</h2>
+      <h4 style={{ textAlign: "center" }}>Follow us on Instagram for event updates!</h4>
       <div className="instagram-grid">
         {posts.map((post) => (
           <a
