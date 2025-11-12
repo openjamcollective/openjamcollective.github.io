@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { EventProps} from '../../lib/interfaces'
 import './Events.css';
+import '../instagram/instagram.css';
 import { Link } from 'react-router-dom';
 import * as Util from '../../lib/util';
 
-const EventCard:React.FC<{ obj: EventProps, isEven: boolean }> = (props) => {
+const EventCard:React.FC<{ obj: EventProps}> = (props) => {
     const [showCard, setShowCard] = useState(true);
     const [smallScreen, setSmallScreen] = useState(false);
 
@@ -27,21 +28,22 @@ const EventCard:React.FC<{ obj: EventProps, isEven: boolean }> = (props) => {
         };
       }, []);
 
-    return (
-        <div>
-            {props.isEven || !smallScreen ?
-            <div className='event-info'>
-                {mediaDiv(props.obj)}
-                {infoDiv(props.obj)}
-            </div>
-            :
-            <div className='event-info'>
-                {infoDiv(props.obj)}
-                {mediaDiv(props.obj)}
-            </div>
-            }
-        </div>
-  );
+    return mediaDiv(props.obj);
+  //   (
+  //       <div>
+  //           {props.isEven || !smallScreen ?
+  //           <div className='event-info'>
+  //               {mediaDiv(props.obj)}
+  //               {infoDiv(props.obj)}
+  //           </div>
+  //           :
+  //           <div className='event-info'>
+  //               {infoDiv(props.obj)}
+  //               {mediaDiv(props.obj)}
+  //           </div>
+  //           }
+  //       </div>
+  // );
 }
 
 const infoDiv = (props: EventProps) => {
@@ -60,11 +62,11 @@ const infoDiv = (props: EventProps) => {
 }
 
 const mediaDiv = (props: EventProps) => {
-    return (<div className="media-div">
-              {props.media &&
-                    <div>
-                        <img className="event-image" src={props.media}/>
-                    </div>
+    return (<div className="media-div instagram-item">
+              {props.media && props.instagram &&
+                    <a href={Util.instagram + props.instagram}>
+                          <img className="event-image" src={props.media}/>
+                      </a>
                 }
     </div>)
 }

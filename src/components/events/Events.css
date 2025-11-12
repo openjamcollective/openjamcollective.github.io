@@ -11,11 +11,11 @@
       grid-template-columns: 1fr;
     }
   }
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     .media-div{
         min-width: 600px 
     }
-  }
+  } */
 .event-image{
     max-width: 300px;
 }

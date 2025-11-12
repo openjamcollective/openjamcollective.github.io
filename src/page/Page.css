@@ -216,6 +216,12 @@
   grid-template-columns: repeat(2,1fr);
 }
 
+.grid-container-events{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+
 .video-bg {
   position: relative;
   overflow: hidden;

@@ -3,8 +3,9 @@ import {eventlist} from '../lib/data/Events';
 import EventCard from '../components/events/EventCard';
 import { AffiliateProps } from '../lib/interfaces';
 import Instagram from '../components/instagram/Instagram';
+import "../components/instagram/instagram.css"
 const Events: React.FC = () => {
-      const pageSize = 3; // Number of EventCards per page
+      const pageSize = 6; // Number of EventCards per page
     const [currentPage, setCurrentPage] = useState(1);
   
     const totalPages = Math.ceil(eventlist.length / pageSize);
@@ -40,18 +41,16 @@ const Events: React.FC = () => {
     return (
       <header className="App-header">
         <h4><i>Follow us on Instagram for event updates!</i></h4>
-                {/* <h4>
-          <i>Events</i>
-        </h4>
-        <div className="container pagedisplay content-sec">
-          <div className="row">
+        <div className="container content-sec">
+          <div className="row grid-container-events">
             {eventlist.slice(startIndex, endIndex).map((event, index) => {
               const isEven = index % 2 === 0;
-              return (
-                <div className="col-md-4" key={index}>
-                  <EventCard obj={event} isEven={isEven} />
-                </div>
-              );
+              return <EventCard obj={event} />
+              // return (
+              //   <div className="col-md-4" key={index}>
+              //     <EventCard obj={event} isEven={isEven} />
+              //   </div>
+              // );
             })}
           </div>
           <div className="pagination">
@@ -59,7 +58,11 @@ const Events: React.FC = () => {
               Previous
             </button>
             {Array.from({ length: totalPages }, (_, index) => (
-              <button key={index + 1} onClick={() => setCurrentPage(index + 1)}>
+              <button 
+              key={index + 1} 
+              onClick={() => setCurrentPage(index + 1)}
+              className={currentPage === index + 1 ? "active-page" : ""}
+              >
                 {index + 1}
               </button>
             ))}
@@ -67,10 +70,10 @@ const Events: React.FC = () => {
               Next
             </button>
           </div>
-        </div> */}
-          <div className="row">
+        </div>
+          {/* <div className="row">
                 <Instagram/>
-            </div>
+            </div> */}
       </header>
     );
   };
