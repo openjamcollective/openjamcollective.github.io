@@ -86,19 +86,7 @@
   padding-bottom: 1em;
 }
 
-.quote {
-  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;      /* rounded corners */
-  display: inline-block;   /* shrink wrap to text */
 
-  position: absolute;
-  top: 75%;  
-  left: 10em;
-  text-align: center;
-  width: 50%;
-}
 
 .stats-grid {
   display: grid;
@@ -268,10 +256,6 @@
     top: 94%;       /* halfway down */
     left: 50%;      /* halfway across */
     font-size: 15px;
-  }
-  .quote {
-    left: 1em;
-    width: 70%;
   }
   .home-section {
     background-attachment: scroll;

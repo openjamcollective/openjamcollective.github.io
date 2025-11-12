@@ -135,6 +135,7 @@
   gap: 1rem; /* spacing between images */
   overflow: hidden;
   padding-bottom: 1em;
+  padding-top: 1em;
 }
 
 /* For small screens — 1 image per row */
@@ -164,3 +165,8 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1000px){
+  .collabs .grid-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

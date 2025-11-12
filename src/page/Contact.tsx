@@ -3,6 +3,7 @@ import iglogo from '../lib/images/ig-white.png';
 import email from '../lib/images/email-white.png';
 import botb from '../lib/images/BOTB_Jam.jpg';
 import discord_logo from '../lib/images/icons8-discord-100.png';
+import Carousel from '../components/carousel/Carousel';
 const Contact:React.FC =() =>{
       useEffect(() => {
     const handleScroll = () => {
@@ -29,7 +30,8 @@ const Contact:React.FC =() =>{
       ></div> */}
         
             {contactInfo()}
-        <img className='contact-image' src={botb}></img>    
+        {/* <img className='contact-image' src={botb}></img>   */}
+        <Carousel/>  
         </header> 
     )
 }
