@@ -15,7 +15,7 @@ export const diana: Module.PersonProps = {
 
 export const luis: Module.PersonProps = {
     name: 'Luis Miguel',
-    about: 'Luis "Cheech" Miguel is a seasoned Popper/Tutter/choreographer and Street Performer. Hailing from Puebla Mexico, but residing in Toronto Ontario, he has been an active member of the street dance community for over a decade, representing Funkyverse Crew, Damage over time, and Soul Junkiez Crew. Cheech mixes traditional technique with crazy concepts and high performance energy, resulting in over 20 battle wins, a national championship at HHI in 2024 and 2 Golden Buzzers on CGT season 4.',
+    about: 'Luis "Cheech" Miguel is a seasoned Popper/ Tutter/ choreographer and Street Performer. Hailing from Puebla Mexico, but residing in Toronto Ontario, he has been an active member of the street dance community for over a decade, representing Funkyverse Crew, Damage over time, and Soul Junkiez Crew. Cheech mixes traditional technique with crazy concepts and high performance energy, resulting in over 20 battle wins, a national championship at HHI in 2024 and 2 Golden Buzzers on CGT season 4.',
     social: 'cheech1teach1/',
     media: LUIS_PHOTO
 }
@@ -31,7 +31,7 @@ export const keith: Module.PersonProps = {
 
 export const aj: Module.PersonProps = {
     name: 'AJ Harper',
-    about: 'AJ is an African Canadian street dancer, performer, dance instructor, musician, and aspiring professional artist, specializing in popping and waving. He has been evolving within the street dance community for more than fifteen years, and after excelling in street dance competitions, he now wants to explore Afro-cultural and therapeutic approaches to street dance.',
+    about: 'AJ is an Jamaican Canadian street dancer, performer, dance instructor, musician, and aspiring professional artist, specializing in popping and waving. He has been evolving within the street dance community for more than fifteen years, and after excelling in street dance competitions, he now wants to explore Afro-cultural and therapeutic approaches to street dance under his group "Hues In Action". He currently represents Blackout Fam and Soul Junkies as a dance crew member and is a part of Open Jam Collective (OJC).',
     fb: 'aj.harper.39',
     social: 'aaronjharper/',
     media: AJ_PHOTO

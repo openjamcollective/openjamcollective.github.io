@@ -39,6 +39,7 @@ const Events: React.FC = () => {
 
     return (
       <header className="App-header">
+        <h4><i>Follow us on Instagram for event updates!</i></h4>
                 {/* <h4>
           <i>Events</i>
         </h4>

@@ -17,15 +17,22 @@
     list-style-type: none;
     font-size: large;
     text-align: left;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .info-title{
     text-align: left;
-    padding-left: 8%;
+    padding-left: 5%;
     /* font-family: 'Lucida Console', monospace;  */
-    font-family: Georgia, 'Times New Roman', Times, serif
+    /* font-family:'Courier New', Courier, monospace; */
+}
+/* .info-title h4{
+  font-family:'Courier New', Courier, monospace !important;
+} */
+
+.info-list{
+  padding-bottom: 1rem;
 }
 
 .font-stylin{

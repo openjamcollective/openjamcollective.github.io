@@ -8,9 +8,9 @@ const OrganizationCard:React.FC<{ obj: InfoProps }> = (props) => {
             <div className="info-title">
                 <h4><i>{props.obj.title}</i></h4>
             </div>
-            <ul className={listSyle}>
+            <ul className="info-no-bullets">
                 {props.obj.info.map((info,index)=>{
-                    return <li key={index} dangerouslySetInnerHTML={{ __html: info }}/>
+                    return <li key={index} dangerouslySetInnerHTML={{ __html: info }} className="info-list"/>
                 })}
             </ul>
         </div>

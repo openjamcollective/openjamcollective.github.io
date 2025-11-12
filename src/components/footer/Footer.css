@@ -15,5 +15,10 @@
 }
 
 .footer-ojc-logo{
-    width: 70px;
+    max-width: 7rem;
+}
+@media (max-width: 768px) {
+    .footer-ojc-logo{
+        max-width: 5rem;
+    }
 }

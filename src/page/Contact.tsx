@@ -17,7 +17,7 @@ const Contact:React.FC =() =>{
   }, []);
 
     return(
-        <header className="App-header">
+        <header className="App-header contact-page">
             <h4>
             <i>Contact us</i>
         </h4>
@@ -35,23 +35,26 @@ const Contact:React.FC =() =>{
 }
 
 const contactInfo = () => {
-    return <div className="container content-sec">
-        
-        <div className='logo-info'>
-            <a>
-                <img className="logo-image" src={email}/>
-            </a>
-            <p>openjamcollective@gmail.com</p>
-        </div>
-        <div className='logo-info down-bad'>
-            <a href='https://www.instagram.com/openjamcollective/'>
-                <img className="ig-logo" src={iglogo}/>
-            </a>
-            <p>@openjamcollective</p>
-        </div>
+    return <div className="container content-sec contact-info">
         <div className='session down-bad'>
             <p>Message us to join our Facebook or Instagram group chat and learn about weekly popping sessions across the city!</p>
         </div>
+        <div className='grid-container2'>
+          <div className='logo-info'>
+              <a>
+                  <img className="logo-image" src={email}/>
+              </a>
+              <p>openjamcollective@gmail.com</p>
+          </div>
+          <div className='logo-info down-bad'>
+              <a href='https://www.instagram.com/openjamcollective/'>
+                  <img className="ig-logo" src={iglogo}/>
+              </a>
+              <p>@openjamcollective</p>
+          </div>
+        </div>
+        
+        
     </div>
 }
 export default Contact;

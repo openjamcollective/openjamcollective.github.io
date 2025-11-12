@@ -149,6 +149,9 @@
   margin: 0;
 }
 
+.contact-info p{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 
 .overlay-text {
@@ -216,7 +219,8 @@
 .org-font{
   /* font-style: normal; */
   /* font-family: 'Courier New', Courier, monospace; */
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
 }
 
 .grid-container-people{
@@ -255,6 +259,9 @@
   }
   .org-img {
     background-attachment: scroll;
+  }
+  .contact-page{
+    min-height: 80vh;
   }
 }
 

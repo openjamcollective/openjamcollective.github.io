@@ -1,12 +1,12 @@
 import * as Module from '../interfaces';
 
 export const mission: Module.InfoProps = {
-    title: 'Mission',
+    title: 'Our Mission',
     info: ['Open Jam Collective works to keep the spirit of street dance culture—especially popping—alive by creating spaces where people can share, learn, and grow together.']
 }
 
 export const objectives: Module.InfoProps = {
-    title: 'Goals',
+    title: 'Our Goals',
     info: ['<strong>Bring dancers together</strong>—from beginners to seasoned pros—to connect, create, and inspire each other.',
     '<strong>Open doors for the community</strong> to learn, participate, and level up their skills by connecting Toronto dancers with international street dance artists.',
     '<strong>Host an annual street dance festival</strong> in Toronto that draws talent and fans from around the world.',

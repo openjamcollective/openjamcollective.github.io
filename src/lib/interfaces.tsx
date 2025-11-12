@@ -17,7 +17,7 @@ export interface PopProps {
 }
 
 export interface InfoProps {
-    title: string
+    title?: string
     info: string[]
 }
 
