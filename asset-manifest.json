@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.d118450e.css",
-    "main.js": "/static/js/main.48ac2b9d.js",
+    "main.css": "/static/css/main.6b0b3947.css",
+    "main.js": "/static/js/main.8b9d14d1.js",
     "static/js/787.0a7e686c.chunk.js": "/static/js/787.0a7e686c.chunk.js",
+    "static/media/OpenJam.mp4": "/static/media/OpenJam.91ab54be947dc698a3cd.mp4",
     "static/media/BickfordBoogie2.jpg": "/static/media/BickfordBoogie2.bf4ed4d2949b0647005d.jpg",
     "static/media/Keith2.jpg": "/static/media/Keith2.92e65c01a7bab4d90517.jpg",
     "static/media/AJ.jpg": "/static/media/AJ.18fd03b44674651e53a8.jpg",
@@ -12,7 +13,6 @@
     "static/media/BickfordBoogie.png": "/static/media/BickfordBoogie.d24269cba57362d1d0d2.png",
     "static/media/potb.jpg": "/static/media/potb.a391af2963ae4fe9c4ad.jpg",
     "static/media/COTB.png": "/static/media/COTB.274fae087017261f70f1.png",
-    "static/media/BOTB_Clean.jpg": "/static/media/BOTB_Clean.7d8692ba5322b5b360e4.jpg",
     "static/media/bickfordboogie4.jpg": "/static/media/bickfordboogie4.6e7cf225af51cd5ad1aa.jpg",
     "static/media/BOTB_Jam.jpg": "/static/media/BOTB_Jam.e2b644a8257866762faf.jpg",
     "static/media/BOTBPoster.png": "/static/media/BOTBPoster.d75be9bac474806b211b.png",
@@ -50,12 +50,12 @@
     "static/media/880-logo-menu-green.png": "/static/media/880-logo-menu-green.c531204dc3e68f665b6b.png",
     "static/media/email.png": "/static/media/email.a3cff553cfa355a6f82c.png",
     "index.html": "/index.html",
-    "main.d118450e.css.map": "/static/css/main.d118450e.css.map",
-    "main.48ac2b9d.js.map": "/static/js/main.48ac2b9d.js.map",
+    "main.6b0b3947.css.map": "/static/css/main.6b0b3947.css.map",
+    "main.8b9d14d1.js.map": "/static/js/main.8b9d14d1.js.map",
     "787.0a7e686c.chunk.js.map": "/static/js/787.0a7e686c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d118450e.css",
-    "static/js/main.48ac2b9d.js"
+    "static/css/main.6b0b3947.css",
+    "static/js/main.8b9d14d1.js"
   ]
 }
