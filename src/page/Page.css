@@ -251,6 +251,9 @@
   .grid-container-people{
     grid-template-columns: repeat(1,1fr);
   }
+  .grid-container-events{
+    grid-template-columns: repeat(1, 1fr);
+  }
   .pagedisplay{
     padding-top: 0;
   }
