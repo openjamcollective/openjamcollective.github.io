@@ -1,27 +1,40 @@
 import React, {useEffect} from 'react';
 import botb from '../lib/images/BOTB_Clean.jpg';
+import botbVideo from '../lib/images/OpenJam.mp4';
 import Collaborators from '../components/about/Collaborators';
 import './Page.css';
 import Footer from '../components/footer/Footer';
 const Home:React.FC =() =>{
-          useEffect(() => {
-        const handleScroll = () => {
-          const scrollY = window.scrollY;
-          const parallax = document.querySelector('.home-section') as HTMLElement;
-          if (parallax) {
-            parallax.style.backgroundPositionY = `${scrollY * 0.2}px`;
-          }
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-      }, []);
+      //     useEffect(() => {
+      //   const handleScroll = () => {
+      //     const scrollY = window.scrollY;
+      //     const parallax = document.querySelector('.home-section') as HTMLElement;
+      //     if (parallax) {
+      //       parallax.style.backgroundPositionY = `${scrollY * 0.2}px`;
+      //     }
+      //   };
+      //   window.addEventListener('scroll', handleScroll);
+      //   return () => window.removeEventListener('scroll', handleScroll);
+      // }, []);
     return(
         <header className="App-header">
-            <div className="row home-section"
+            {/* <div className="row home-section"
                 style={{
                 backgroundImage: `url(${botb})`,
             }}>
                 <p className="quote"><i>"For the community, by the community." - Luis Miguel</i></p>
+            </div> */}
+            <div className="row home-section video-bg">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="background-video"
+            >
+              <source src={botbVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
             </div>
             <div className="row">
                 <Collaborators/>
