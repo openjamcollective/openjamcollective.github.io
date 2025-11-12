@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf99cd8f.css",
-    "main.js": "/static/js/main.3ce978c1.js",
+    "main.css": "/static/css/main.ddf4fe24.css",
+    "main.js": "/static/js/main.4e3d6d59.js",
     "static/js/787.0a7e686c.chunk.js": "/static/js/787.0a7e686c.chunk.js",
     "static/media/OpenJam.mp4": "/static/media/OpenJam.91ab54be947dc698a3cd.mp4",
     "static/media/BickfordBoogie2.jpg": "/static/media/BickfordBoogie2.bf4ed4d2949b0647005d.jpg",
@@ -52,12 +52,12 @@
     "static/media/880-logo-menu-green.png": "/static/media/880-logo-menu-green.c531204dc3e68f665b6b.png",
     "static/media/email.png": "/static/media/email.a3cff553cfa355a6f82c.png",
     "index.html": "/index.html",
-    "main.bf99cd8f.css.map": "/static/css/main.bf99cd8f.css.map",
-    "main.3ce978c1.js.map": "/static/js/main.3ce978c1.js.map",
+    "main.ddf4fe24.css.map": "/static/css/main.ddf4fe24.css.map",
+    "main.4e3d6d59.js.map": "/static/js/main.4e3d6d59.js.map",
     "787.0a7e686c.chunk.js.map": "/static/js/787.0a7e686c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf99cd8f.css",
-    "static/js/main.3ce978c1.js"
+    "static/css/main.ddf4fe24.css",
+    "static/js/main.4e3d6d59.js"
   ]
 }
