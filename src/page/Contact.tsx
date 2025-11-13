@@ -43,7 +43,7 @@ const contactInfo = () => {
         </div>
         <div className='grid-container2'>
           <div className='logo-info'>
-              <a>
+              <a href="mailto:openjamcollective@gmail.com">
                   <img className="logo-image" src={email}/>
               </a>
               <p>openjamcollective@gmail.com</p>

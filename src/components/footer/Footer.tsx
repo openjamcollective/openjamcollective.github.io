@@ -11,7 +11,7 @@ const Footer:React.FC =() =>{
             </div>
         <div className='footer-right'>
             <div className='logo-info'>
-                <a>
+                <a href="mailto:openjamcollective@gmail.com">
                     <img className="footer-ig-logo" src={email}/>
                 </a>
                 <p>openjamcollective@gmail.com</p>

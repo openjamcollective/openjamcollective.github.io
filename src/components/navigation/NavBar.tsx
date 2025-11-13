@@ -58,7 +58,7 @@ const NaviBar: React.FC = () => {
       <ul className="nav-list grid-item">
             {navLinks.map(({ path, label }) => (
       <li className="nav-li" key={path}>
-        <Link to={path}>{label}</Link>
+        <Link to={path} onClick={() => setNavbarOpen(false)}>{label}</Link>
       </li>
     ))}
       </ul>
