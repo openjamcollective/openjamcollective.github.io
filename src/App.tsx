@@ -1,7 +1,6 @@
 import React from 'react';
 import {
-  // BrowserRouter as Router,
-  BrowserRouter,
+  HashRouter as Router,
   Routes,
   Route,
   Link,
@@ -24,7 +23,7 @@ import Keith from './components/keith/Keith';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
         <NaviBar/>
         <Routes>
           <Route path="/team" element={<About/>} />
@@ -40,7 +39,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
     </Routes>
     <Footer/>
-  </BrowserRouter>
+  </Router>
     </div>
   );
 }

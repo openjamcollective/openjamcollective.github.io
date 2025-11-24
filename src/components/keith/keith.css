@@ -28,11 +28,30 @@
     margin-bottom: 0;    
 }
 
+.table-container{
+    
+    overflow-x: auto;
+    padding-bottom: 2rem;
+}
+
 .dance-table{
     text-align: left;
-    padding-bottom: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
 }
 
 .dance-table th{
     padding-right: 1rem;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-work{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .table-container{
+        width: 100%;
+    }
 }

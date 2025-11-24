@@ -114,4 +114,4 @@ export const soulbotics: Module.DanceProps = {
 
 
 
-export const danceList: Module.DanceProps[] = [unityfest, topopping, parksnwreck, jamdemic, jamdemic2, vsdf, stackingStyles, waveswithin, tkl,soulbotics];
+export const danceList: Module.DanceProps[] = [unityfest, topopping, parksnwreck, beatsAllDay, jamdemic, jamdemic2, vsdf, stackingStyles, waveswithin, tkl,soulbotics];
