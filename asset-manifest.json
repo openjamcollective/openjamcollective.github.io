@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f3e32467.css",
-    "main.js": "/static/js/main.9d4bf9fc.js",
+    "main.css": "/static/css/main.af14d376.css",
+    "main.js": "/static/js/main.ae443404.js",
     "static/js/787.0a7e686c.chunk.js": "/static/js/787.0a7e686c.chunk.js",
     "static/media/OpenJam.mp4": "/static/media/OpenJam.91ab54be947dc698a3cd.mp4",
     "static/media/BickfordBoogie2.jpg": "/static/media/BickfordBoogie2.bf4ed4d2949b0647005d.jpg",
@@ -39,6 +39,8 @@
     "static/media/OJC_vs jar black.png": "/static/media/OJC_vs jar black.1ef92036b426143c545a.png",
     "static/media/dpnchc.jpg": "/static/media/dpnchc.e2209336ff66171ffc0d.jpg",
     "static/media/Unity_Davenport.jpg": "/static/media/Unity_Davenport.476e43d294b886139155.jpg",
+    "static/media/nokia2.png": "/static/media/nokia2.bf7fe8b217fb69448982.png",
+    "static/media/mcgill3.png": "/static/media/mcgill3.438b439b4eeea0a62c6b.png",
     "static/media/unity.png": "/static/media/unity.4446c998c93e2a7c45fd.png",
     "static/media/Unity_Program.jpg": "/static/media/Unity_Program.0ff9ac2568d9b6c7b719.jpg",
     "static/media/family_logo.png": "/static/media/family_logo.568c16645e6c7334817b.png",
@@ -46,18 +48,20 @@
     "static/media/equitas_logo.en_.png": "/static/media/equitas_logo.en_.854c665ee8d4bd5d0d21.png",
     "static/media/Toronto,_City_of.svg.png": "/static/media/Toronto,_City_of.svg.cb87f52ba9109b347d50.png",
     "static/media/OJC_Full.png": "/static/media/OJC_Full.52e54a5e32273496c119.png",
+    "static/media/fixmestick.png": "/static/media/fixmestick.c431d7f3f53b16a3725b.png",
     "static/media/Park-People-stack-logo.png": "/static/media/Park-People-stack-logo.3b66fb5fe3a2bfb60b40.png",
     "static/media/tornto-arts-council.png": "/static/media/tornto-arts-council.332a5ae747db6905df4f.png",
+    "static/media/smithlogo.png": "/static/media/smithlogo.426e6e251cfced0ce894.png",
     "static/media/instagram.png": "/static/media/instagram.b79433a6d7925494f44f.png",
     "static/media/880-logo-menu-green.png": "/static/media/880-logo-menu-green.c531204dc3e68f665b6b.png",
     "static/media/email.png": "/static/media/email.a3cff553cfa355a6f82c.png",
     "index.html": "/index.html",
-    "main.f3e32467.css.map": "/static/css/main.f3e32467.css.map",
-    "main.9d4bf9fc.js.map": "/static/js/main.9d4bf9fc.js.map",
+    "main.af14d376.css.map": "/static/css/main.af14d376.css.map",
+    "main.ae443404.js.map": "/static/js/main.ae443404.js.map",
     "787.0a7e686c.chunk.js.map": "/static/js/787.0a7e686c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3e32467.css",
-    "static/js/main.9d4bf9fc.js"
+    "static/css/main.af14d376.css",
+    "static/js/main.ae443404.js"
   ]
 }
