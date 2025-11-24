@@ -7,6 +7,7 @@ export interface PersonProps {
     fb?: string
     media?: string
     photo_style?: string
+    section?: string
 }
 
 export interface PopProps {
@@ -19,6 +20,28 @@ export interface PopProps {
 export interface InfoProps {
     title?: string
     info: string[]
+}
+
+export interface WorkProps {
+    title: string
+    company: string
+    info: string[]
+    date: Date[]
+    languages?: string[]
+    location: string
+    achievements?: string[] 
+    logo: string
+}
+
+export interface DanceProps {
+    title: string,
+    year: number, 
+    organizer?: string,
+    quantity: number,
+    placement: number,
+    style: string,
+    location: string,
+    total?: number
 }
 
 export interface EventProps {

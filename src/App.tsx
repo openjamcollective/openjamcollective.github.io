@@ -19,6 +19,7 @@ import {eventlist} from './lib/data/Events';
 import EventCard from './components/events/EventPanel';
 import EventPanel from './components/events/EventPanel';
 import Footer from './components/footer/Footer';
+import Keith from './components/keith/Keith';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/about" element={<Organization/>} />
           <Route path="/about/history" element={<History/>} />
           <Route path="/events/stats" element={<Stats/>} />
+          <Route path="/keith" element={<Keith/>} />
           <Route path="/events" element={<Events/>} />
           <Route path="/contact" element={<Contact/>} />
           {eventlist.map(event=>

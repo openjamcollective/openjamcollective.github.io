@@ -1,0 +1,38 @@
+.grid-work{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-work-card{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    padding: 1rem;
+    /* background: lightblue; */
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+.grid-work-card img{
+    width: 100px;
+}
+.grid-photo {
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically (optional) */
+}
+
+.grid-work-card p{
+    margin-top: 0;
+    margin-bottom: 0;    
+}
+
+.dance-table{
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.dance-table th{
+    padding-right: 1rem;
+}

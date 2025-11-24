@@ -79,6 +79,23 @@ export enum MediaType {
     Program,
     Festival
 }
+
+export const dance_styles = {
+  POPPING : "Popping",
+  KRUMP : "Krump",
+  ANIMATION : "Animation",
+  WAVING : "Waving",
+  OPEN : "Open Styles"
+}
+
+export const location = {
+  TORONTO: "Toronto, ON",
+  MONTREAL: "Montreal, QC",
+  BOSTON: "Boston, MC",
+  VANCOUVER: "Vancouver, BC",
+  KANATA: "Kanata, ON",
+  INTERNATIONAL: "International / Online"
+}
 //Festival is anything that has 2 events 
   
   

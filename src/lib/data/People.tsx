@@ -22,16 +22,17 @@ export const luis: Module.PersonProps = {
 
 export const keith: Module.PersonProps = {
     name: 'Keith Dang',
-    about: 'Keith Dang aka "Slow Keith", is a street dancer, software developer, and second generation Vietnamese immigrant. He has been active in the street dance community for over 10 years. Also, he created this website, hello world.',
+    about: 'Keith Dang aka "Slow Keith", is a street dancer, software developer, and second generation Vietnamese immigrant. He has been active in the street dance community for over 10 years. He currently represents Kodiak Fam and Soul Junkiez as a dance crew member. Also, he created this website, hello world.',
     fb: 'keith.dang',
     social: 'slow.keith/',
     media: kd,
-    photo_style: "vertical-rect"
+    photo_style: "vertical-rect",
+    section: 'KD'
 }
 
 export const aj: Module.PersonProps = {
     name: 'AJ Harper',
-    about: 'AJ is an Jamaican Canadian street dancer, performer, dance instructor, musician, and aspiring professional artist, specializing in popping and waving. He has been evolving within the street dance community for more than fifteen years, and after excelling in street dance competitions, he now wants to explore Afro-cultural and therapeutic approaches to street dance under his group "Hues In Action". He currently represents Blackout Fam and Soul Junkies as a dance crew member and is a part of Open Jam Collective (OJC).',
+    about: 'AJ is an Jamaican Canadian street dancer, performer, dance instructor, musician, and aspiring professional artist, specializing in popping and waving. He has been evolving within the street dance community for more than fifteen years, and after excelling in street dance competitions, he now wants to explore Afro-cultural and therapeutic approaches to street dance under his group "Hues In Action". He currently represents Blackout Fam and Soul Junkiez as a dance crew member and is a part of Open Jam Collective (OJC).',
     fb: 'aj.harper.39',
     social: 'aaronjharper/',
     media: AJ_PHOTO

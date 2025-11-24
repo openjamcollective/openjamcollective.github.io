@@ -2,6 +2,7 @@ import React from 'react';
 import { PersonProps} from '../../lib/interfaces'
 import iglogo from '../../lib/images/ig-white.png'
 import fblogo from '../../lib/images/facebook.png'
+import { Link } from 'react-router-dom';
 import * as UtilConst from '../../lib/util';
 
 const PersonCard:React.FC<{ obj: PersonProps }> = (props) => {
@@ -31,6 +32,7 @@ export const contact = (props: PersonProps) =>{
     {props.fb && <a href={UtilConst.facebook +props.fb}>
         <img className={props.social && "logo-fb"} src={fblogo}/>
     </a>}
+    {props.section && <Link to='/keith' className='kd' >{props.section}</Link>}
     </div>
 }
 

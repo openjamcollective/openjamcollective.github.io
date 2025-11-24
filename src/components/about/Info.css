@@ -111,6 +111,22 @@
 .logo-image{
     max-width: 40px;
 }
+.contact-grid{
+  display: flex;
+  align-items: center; /* vertically centers items */
+  /* gap: 0.5rem; */
+}
+.kd{
+  color: white;
+  padding-left: 1rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  vertical-align: middle; 
+}
+
+.kd:hover {
+  text-decoration: underline;   /* underline on hover */
+}
 
 .collabs{
   background-color: white;
