@@ -13,7 +13,20 @@
     border-radius: 15px;
     border: 2px solid white;
 }
-
+.grid-projects-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    padding: 1rem;
+    /* background: lightblue; */
+    border-radius: 15px;
+    border: 2px solid white;
+    width: 50%;
+}
+.grid-projects-card div{
+    padding: 1rem;
+}
 .grid-work-card img{
     width: 100px;
 }
@@ -46,6 +59,11 @@
     text-decoration: underline;
 }
 
+.vid{
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (max-width: 768px) {
     .grid-work{
         display: grid;
@@ -53,5 +71,9 @@
     }
     .table-container{
         width: 100%;
+    }
+    .grid-projects-card{
+        grid-template-columns: 1fr;
+        width: 90%;
     }
 }
