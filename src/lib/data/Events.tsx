@@ -32,6 +32,10 @@ import toronto from "../images/Toronto,_City_of.svg.png";
 import unity from "../images/unity.png";
 import tac from "../images/tornto-arts-council.png";
 import evergreen from "../images/evergreen.png";
+import buildingTheBoogie from "../images/Building The Boogie.png";
+import unity2026 from "../images/UnityOJC2026.png";
+import aycsImg from "../images/AYCS.png";
+import aycsImg2 from "../images/AYCS2.png";
 import * as Util from '../util';
 import { MediaType } from '../util';
 
@@ -354,6 +358,53 @@ export const jnj: Module.EventProps = {
     affiliates: [{name: collaborators.EQUITAS.name, fund: 750}, {name: collaborators.DONATIONS.name, fund: 900}]
 }
 
+export const btb: Module.EventProps = {
+    name: 'Building the Boogie',
+    about: 'Online Conversation',
+    date: [new Date(2026, 1, 10)],
+    location: "Online",
+    media: buildingTheBoogie,
+    instagram: 'p/DTBish2Af3J/',
+    event: MediaType.Normal,
+    attendees: 20
+}
+
+export const unityOJC2026: Module.EventProps = {
+    name: 'OJC Popping: Train and Gain',
+    about: 'Dance Program',
+    date: [new Date(2026, 1, 21),new Date(2026, 3, 11)],
+    location: UNITY_STUDIO,
+    media: unity2026,
+    instagram: 'p/DTOWS7Pk-nH/?img_index=1',
+    event: MediaType.Program, 
+    attendees: 20,
+    affiliates: [{name: collaborators.UNITY.name, fund: 1450}]
+}
+
+export const aycs: Module.EventProps = {
+    name: 'All You Can Street',
+    about: 'Cross Collaborative Street Dance Event',
+    date: [new Date(2026, 5, 17)],
+    location: "Sound Machine 187 Bathurst St",
+    media: aycsImg,
+    instagram: 'p/DXj2nXFjZoF/',
+    event: MediaType.Normal, 
+    attendees: 100,
+    affiliates: [{name: collaborators.TAC.name, fund: 5000},{name: collaborators.UNITY.name, fund: 1000}]
+}
+
+export const aycs2: Module.EventProps = {
+    name: 'All You Can Str(eat)',
+    about: 'Cross Collaborative Street Dance Event',
+    date: [new Date(2026, 7, 26)],
+    location: "Carrot Common",
+    media: aycsImg2,
+    instagram: 'p/DaoOvHoxPkP/',
+    event: MediaType.Normal, 
+    attendees: 100,
+    affiliates: [{name: collaborators.TAC.name, fund: 300}]
+}
+
 export const funkforyourfeet: Module.EventProps = {
     name: "Funk For Your Feet",
     about: '1v1 Popping Battle',
@@ -403,7 +454,11 @@ export const event_unsorted: Module.EventProps[] = [
     unity2024,
     unity2025,
     jnj,
-    borderlessboogie2
+    borderlessboogie2,
+    btb,
+    unityOJC2026,
+    aycs,
+    aycs2
 ];
 
 export const eventlist: Module.EventProps[] = Util.sortEventsByDate(event_unsorted);
