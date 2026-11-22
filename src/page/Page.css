@@ -19,6 +19,10 @@
   .ig-logo{
     transform: scale(1.1);
   }
+  .youtube-logo{
+    /* transform: scale(0.4); */
+    max-width: 3rem;
+  }
   .med-logo{
     max-height: 2rem;
   }
@@ -126,6 +130,13 @@
 .grid-container2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; /* adjust spacing as needed */
+  width: 90%;
+  justify-self: center;
+}
+.grid-container3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem; /* adjust spacing as needed */
   width: 90%;
   justify-self: center;
@@ -242,6 +253,9 @@
 }
 
 @media (max-width: 768px) {
+  .grid-container3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .grid-container2 {
     grid-template-columns: repeat(1, 1fr);
   }

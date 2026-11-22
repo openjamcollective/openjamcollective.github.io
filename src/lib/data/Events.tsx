@@ -36,6 +36,10 @@ import buildingTheBoogie from "../images/Building The Boogie.png";
 import unity2026 from "../images/UnityOJC2026.png";
 import aycsImg from "../images/AYCS.png";
 import aycsImg2 from "../images/AYCS2.png";
+import bentwayImg from "../images/bentway2.jpg";
+import cypherPlayground from "../images/Black Logo.png";
+import urbanArts from "../images/Urban_arts.jpeg";
+import flavour from "../images/flavour2.png";
 import * as Util from '../util';
 import { MediaType } from '../util';
 
@@ -60,9 +64,21 @@ export const collaborators = {
     name: "Equitas",
     image: equitas
   },
+    URBAN_ARTS: {
+    name: "Urban Arts",
+    image: urbanArts
+  },
+    CYPHER_PLAYGROUND: {
+    name: "Cypher Playground",
+    image: cypherPlayground
+  },
   UNITY: {
     name: "Unity Charity",
     image: unity
+  },
+  BENTWAY:{
+    name:"The Bentway",
+    image: bentwayImg
   },
   WAFF: {
     name: "We Are Family Foundation",
@@ -125,13 +141,14 @@ export const botb: Module.EventProps = {
     date: [new Date(2022, 3, 30)],
     location: location.BENTWAY,
     media: botbp,
-    instagram: '/p/CdAZ_6nuVT-/',
+    instagram: 'p/CcLh8YpJgr3/',
     facebook: '970824263797543',
     video: '4Cr8iaauP4U',
     link: 'botb',
     event: MediaType.Normal,
     attendees: 100,
-    affiliates: [{name: collaborators.EQUITAS.name, fund: 1150}, {name: collaborators.REDBULL.name, fund: 1485}, {name: collaborators.DONATIONS.name, fund: 535}]
+    affiliates: [{name: collaborators.EQUITAS.name, fund: 1150}, {name: collaborators.REDBULL.name, fund: 1485}, 
+        {name: collaborators.BENTWAY.name, fund: 0}, {name: collaborators.URBAN_ARTS.name, fund: 0}, {name: collaborators.DONATIONS.name, fund: 535}]
 }
 
 export const cotb: Module.EventProps = {
@@ -180,6 +197,19 @@ export const topopping: Module.EventProps = {
     attendees: 60,
     affiliates: [ {name: collaborators.DONATIONS.name, fund: 300}]
 }
+
+export const llyod: Module.EventProps = {
+    name: 'Flavour in da street',
+    about: 'Documentary',
+    role: 'Collaborator',
+    date: [new Date(2026, 9, 12)],
+    location: '720 Spadina',
+    media: flavour,
+    instagram: 'p/Dcohuwpxt5Z/',
+    event: MediaType.Normal,
+    affiliates: [ {name: collaborators.CYPHER_PLAYGROUND.name, fund: 0}]
+}
+
 
 export const dperth: Module.EventProps = {
     name: 'Street Dance Drop-In Sessions',
@@ -252,7 +282,8 @@ export const unitydavenport: Module.EventProps = {
     date: [new Date(2023, 10, 29), new Date(2024, 2, 27)],
     location: dvpch,
     media: unitydpt,
-    instagram: 'p/C0FfzVmvqf1/',
+    // instagram: 'p/C0FfzVmvqf1/',
+    instagram: 'p/C0KvcDwtMca/',
     event: MediaType.Program,
     attendees: 20,
     affiliates: [{name: collaborators.UNITY.name, fund: 1700}]
@@ -458,7 +489,8 @@ export const event_unsorted: Module.EventProps[] = [
     btb,
     unityOJC2026,
     aycs,
-    aycs2
+    aycs2,
+    llyod
 ];
 
 export const eventlist: Module.EventProps[] = Util.sortEventsByDate(event_unsorted);

@@ -19,7 +19,7 @@ export const objectives: Module.InfoProps = {
 export const whoweare: Module.InfoProps = {
     title: 'Who We Are',
     info: ['In 2022, Open Jam Collective (formerly Oatmilk & Jam) was formed by Luis (Cheech) Miguel, Keith Dang, Diana Da Silva and Tamami Gavrilovic decided street dance couldn’t be stopped—even by a pandemic! When indoor dance spaces and community events shut down, we moved the beats outside, bringing people together for park sessions, dance battles, and event trips to keep the legacy alive.',
-        'In 2023, we decided to keep the momentum going and grow as a collective dedicated to celebrating and sharing street dance culture. Since then, Tamami has stepped back, and AJ Harper has jumped in to join the team! '
+        'In 2023, we decided to keep the momentum going and grow as a collective dedicated to celebrating and sharing street dance culture. Since then, Tamami has stepped back, and AJ Harper and Rhys Fernandes have jumped in to join the team!'
     ]
 }
 

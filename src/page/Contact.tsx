@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import iglogo from '../lib/images/ig-white.png';
 import email from '../lib/images/email-white.png';
+import youtube from '../lib/images/yt_icon_white_digital.png';
 import botb from '../lib/images/BOTB_Jam.jpg';
 import discord_logo from '../lib/images/icons8-discord-100.png';
 import Carousel from '../components/carousel/Carousel';
@@ -41,16 +42,22 @@ const contactInfo = () => {
         <div className='session down-bad'>
             <p>Message us to join our Facebook or Instagram group chat and learn about weekly popping sessions across the city!</p>
         </div>
-        <div className='grid-container2'>
+        <div className='grid-container3'>
           <div className='logo-info'>
               <a href="mailto:openjamcollective@gmail.com">
                   <img className="logo-image" src={email}/>
               </a>
               <p>openjamcollective@gmail.com</p>
           </div>
-          <div className='logo-info down-bad'>
+          <div className='logo-info'>
               <a href='https://www.instagram.com/openjamcollective/'>
                   <img className="ig-logo" src={iglogo}/>
+              </a>
+              <p>@openjamcollective</p>
+          </div>
+          <div className='logo-info'>
+              <a href='https://www.youtube.com/@OpenJamCollective'>
+                  <img className="youtube-logo" src={youtube}/>
               </a>
               <p>@openjamcollective</p>
           </div>
